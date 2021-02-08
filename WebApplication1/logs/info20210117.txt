@@ -1,0 +1,388 @@
+2021-01-17 07:22:19.101 +00:00 [INF] Starting up
+2021-01-17 07:22:19.477 +00:00 [INF] Now listening on: https://localhost:5001
+2021-01-17 07:22:19.480 +00:00 [INF] Now listening on: http://localhost:5000
+2021-01-17 07:22:19.481 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-01-17 07:22:19.482 +00:00 [INF] Hosting environment: Development
+2021-01-17 07:22:19.483 +00:00 [INF] Content root path: C:\dev\test\RecordTest\WebApplication1
+2021-01-17 07:22:22.247 +00:00 [INF] HTTP GET / responded 200 in 161.6757 ms
+2021-01-17 07:22:24.824 +00:00 [INF] Actor { ActorID = 4, Name = $hort, Too, Sex = M }
+2021-01-17 07:22:24.826 +00:00 [INF] Actor { ActorID = 16, Name = 'Bear'Boyd, Steven, Sex = M }
+2021-01-17 07:22:24.827 +00:00 [INF] Actor { ActorID = 28, Name = 'Dead End' Kids, The, Sex = M }
+2021-01-17 07:22:24.828 +00:00 [INF] Actor { ActorID = 566, Name = Aaby, Kristian, Sex = M }
+2021-01-17 07:22:24.829 +00:00 [INF] Actor { ActorID = 580, Name = , Sex = M }
+2021-01-17 07:22:24.829 +00:00 [INF] Actor { ActorID = 636, Name = Aaker, Lee, Sex = M }
+2021-01-17 07:22:24.830 +00:00 [INF] Actor { ActorID = 769, Name = Aamodt, Thor Michael, Sex = M }
+2021-01-17 07:22:24.831 +00:00 [INF] Actor { ActorID = 797, Name = Aar, Jim, Sex = M }
+2021-01-17 07:22:24.832 +00:00 [INF] Actor { ActorID = 802, Name = Aaran, Abraxas, Sex = M }
+2021-01-17 07:22:24.833 +00:00 [INF] Actor { ActorID = 808, Name = Aard, Frank J., Sex = M }
+2021-01-17 07:22:24.834 +00:00 [INF] Actor { ActorID = 817, Name = Aardvark Bragpuss, Fritz, Sex = M }
+2021-01-17 07:22:24.835 +00:00 [INF] Actor { ActorID = 851, Name = Aarniokoski, Douglas, Sex = M }
+2021-01-17 07:22:24.835 +00:00 [INF] Actor { ActorID = 888, Name = Aaron, Bob (I), Sex = M }
+2021-01-17 07:22:24.836 +00:00 [INF] Actor { ActorID = 894, Name = Aaron, Chad (I), Sex = M }
+2021-01-17 07:22:24.837 +00:00 [INF] Actor { ActorID = 923, Name = Aaron, James (I), Sex = M }
+2021-01-17 07:22:24.838 +00:00 [INF] Actor { ActorID = 962, Name = Aaron, Sam (I), Sex = M }
+2021-01-17 07:22:24.841 +00:00 [INF] Actor { ActorID = 978, Name = Aaron, Victor (I), Sex = M }
+2021-01-17 07:22:24.842 +00:00 [INF] Actor { ActorID = 989, Name = Aarons, Allan, Sex = M }
+2021-01-17 07:22:24.843 +00:00 [INF] Actor { ActorID = 1143, Name = Aasland, Derek, Sex = M }
+2021-01-17 07:22:24.844 +00:00 [INF] Actor { ActorID = 1276, Name = Abadal, Ignasi, Sex = M }
+2021-01-17 07:22:24.844 +00:00 [INF] Actor { ActorID = 1304, Name = Abadia, Oscar, Sex = M }
+2021-01-17 07:22:24.845 +00:00 [INF] Actor { ActorID = 1348, Name = Abadía, Julio, Sex = M }
+2021-01-17 07:22:24.846 +00:00 [INF] Actor { ActorID = 1391, Name = Abakaz, Suvit, Sex = M }
+2021-01-17 07:22:24.847 +00:00 [INF] Actor { ActorID = 1517, Name = Abascal, Paul, Sex = M }
+2021-01-17 07:22:24.848 +00:00 [INF] Actor { ActorID = 1535, Name = Abasolo, Roland T., Sex = M }
+2021-01-17 07:22:24.849 +00:00 [INF] Actor { ActorID = 1554, Name = Abatantuono, Diego, Sex = M }
+2021-01-17 07:22:24.850 +00:00 [INF] Actor { ActorID = 1556, Name = Abatcha, Saïdou, Sex = M }
+2021-01-17 07:22:24.851 +00:00 [INF] Actor { ActorID = 1583, Name = Abatemarco, Tony, Sex = M }
+2021-01-17 07:22:24.852 +00:00 [INF] Actor { ActorID = 1588, Name = Abatiell, Robert, Sex = M }
+2021-01-17 07:22:24.853 +00:00 [INF] Actor { ActorID = 1595, Name = Abattucci, Serge, Sex = M }
+2021-01-17 07:22:24.856 +00:00 [INF] Actor { ActorID = 1710, Name = Abbas, Abdullah, Sex = M }
+2021-01-17 07:22:24.857 +00:00 [INF] Actor { ActorID = 1805, Name = Abbasi, Riz, Sex = M }
+2021-01-17 07:22:24.858 +00:00 [INF] Actor { ActorID = 1923, Name = Abbey, Ian, Sex = M }
+2021-01-17 07:22:24.859 +00:00 [INF] Actor { ActorID = 1927, Name = Abbey, John, Sex = M }
+2021-01-17 07:22:24.860 +00:00 [INF] Actor { ActorID = 1929, Name = Abbey, Joshua, Sex = M }
+2021-01-17 07:22:24.861 +00:00 [INF] Actor { ActorID = 1930, Name = Abbey, Leo, Sex = M }
+2021-01-17 07:22:24.862 +00:00 [INF] Actor { ActorID = 1982, Name = Abbot, Bernie, Sex = M }
+2021-01-17 07:22:24.863 +00:00 [INF] Actor { ActorID = 1993, Name = Abbot, Jerry, Sex = M }
+2021-01-17 07:22:24.865 +00:00 [INF] Actor { ActorID = 2000, Name = Abbot, Paul, Sex = M }
+2021-01-17 07:22:24.866 +00:00 [INF] Actor { ActorID = 2007, Name = Abbot, Tommy, Sex = M }
+2021-01-17 07:22:24.867 +00:00 [INF] Actor { ActorID = 2036, Name = Abbott, Bruce (I), Sex = M }
+2021-01-17 07:22:24.868 +00:00 [INF] Actor { ActorID = 2039, Name = Abbott, Bud, Sex = M }
+2021-01-17 07:22:24.870 +00:00 [INF] Actor { ActorID = 2060, Name = Abbott, Dalton, Sex = M }
+2021-01-17 07:22:24.871 +00:00 [INF] Actor { ActorID = 2065, Name = Abbott, David (I), Sex = M }
+2021-01-17 07:22:24.872 +00:00 [INF] Actor { ActorID = 2085, Name = Abbott, Frankie, Sex = M }
+2021-01-17 07:22:24.873 +00:00 [INF] Actor { ActorID = 2117, Name = Abbott, Jamie (I), Sex = M }
+2021-01-17 07:22:24.874 +00:00 [INF] Actor { ActorID = 2131, Name = Abbott, John (I), Sex = M }
+2021-01-17 07:22:24.875 +00:00 [INF] Actor { ActorID = 2132, Name = Abbott, John (II), Sex = M }
+2021-01-17 07:22:24.876 +00:00 [INF] Actor { ActorID = 2154, Name = Abbott, Mark (I), Sex = M }
+2021-01-17 07:22:24.877 +00:00 [INF] Actor { ActorID = 2177, Name = Abbott, Paul (I), Sex = M }
+2021-01-17 07:22:24.941 +00:00 [INF] HTTP GET /DBTest responded 200 in 348.3806 ms
+2021-01-17 07:22:30.511 +00:00 [INF] Actor { ActorID = 4, Name = $hort, Too, Sex = M }
+2021-01-17 07:22:30.513 +00:00 [INF] Actor { ActorID = 16, Name = 'Bear'Boyd, Steven, Sex = M }
+2021-01-17 07:22:30.514 +00:00 [INF] Actor { ActorID = 28, Name = 'Dead End' Kids, The, Sex = M }
+2021-01-17 07:22:30.515 +00:00 [INF] Actor { ActorID = 566, Name = Aaby, Kristian, Sex = M }
+2021-01-17 07:22:30.516 +00:00 [INF] Actor { ActorID = 580, Name = , Sex = M }
+2021-01-17 07:22:30.517 +00:00 [INF] Actor { ActorID = 636, Name = Aaker, Lee, Sex = M }
+2021-01-17 07:22:30.518 +00:00 [INF] Actor { ActorID = 769, Name = Aamodt, Thor Michael, Sex = M }
+2021-01-17 07:22:30.519 +00:00 [INF] Actor { ActorID = 797, Name = Aar, Jim, Sex = M }
+2021-01-17 07:22:30.521 +00:00 [INF] Actor { ActorID = 802, Name = Aaran, Abraxas, Sex = M }
+2021-01-17 07:22:30.523 +00:00 [INF] Actor { ActorID = 808, Name = Aard, Frank J., Sex = M }
+2021-01-17 07:22:30.524 +00:00 [INF] Actor { ActorID = 817, Name = Aardvark Bragpuss, Fritz, Sex = M }
+2021-01-17 07:22:30.525 +00:00 [INF] Actor { ActorID = 851, Name = Aarniokoski, Douglas, Sex = M }
+2021-01-17 07:22:30.526 +00:00 [INF] Actor { ActorID = 888, Name = Aaron, Bob (I), Sex = M }
+2021-01-17 07:22:30.527 +00:00 [INF] Actor { ActorID = 894, Name = Aaron, Chad (I), Sex = M }
+2021-01-17 07:22:30.528 +00:00 [INF] Actor { ActorID = 923, Name = Aaron, James (I), Sex = M }
+2021-01-17 07:22:30.529 +00:00 [INF] Actor { ActorID = 962, Name = Aaron, Sam (I), Sex = M }
+2021-01-17 07:22:30.530 +00:00 [INF] Actor { ActorID = 978, Name = Aaron, Victor (I), Sex = M }
+2021-01-17 07:22:30.532 +00:00 [INF] Actor { ActorID = 989, Name = Aarons, Allan, Sex = M }
+2021-01-17 07:22:30.533 +00:00 [INF] Actor { ActorID = 1143, Name = Aasland, Derek, Sex = M }
+2021-01-17 07:22:30.534 +00:00 [INF] Actor { ActorID = 1276, Name = Abadal, Ignasi, Sex = M }
+2021-01-17 07:22:30.535 +00:00 [INF] Actor { ActorID = 1304, Name = Abadia, Oscar, Sex = M }
+2021-01-17 07:22:30.538 +00:00 [INF] Actor { ActorID = 1348, Name = Abadía, Julio, Sex = M }
+2021-01-17 07:22:30.540 +00:00 [INF] Actor { ActorID = 1391, Name = Abakaz, Suvit, Sex = M }
+2021-01-17 07:22:30.541 +00:00 [INF] Actor { ActorID = 1517, Name = Abascal, Paul, Sex = M }
+2021-01-17 07:22:30.543 +00:00 [INF] Actor { ActorID = 1535, Name = Abasolo, Roland T., Sex = M }
+2021-01-17 07:22:30.544 +00:00 [INF] Actor { ActorID = 1554, Name = Abatantuono, Diego, Sex = M }
+2021-01-17 07:22:30.545 +00:00 [INF] Actor { ActorID = 1556, Name = Abatcha, Saïdou, Sex = M }
+2021-01-17 07:22:30.546 +00:00 [INF] Actor { ActorID = 1583, Name = Abatemarco, Tony, Sex = M }
+2021-01-17 07:22:30.547 +00:00 [INF] Actor { ActorID = 1588, Name = Abatiell, Robert, Sex = M }
+2021-01-17 07:22:30.548 +00:00 [INF] Actor { ActorID = 1595, Name = Abattucci, Serge, Sex = M }
+2021-01-17 07:22:30.550 +00:00 [INF] Actor { ActorID = 1710, Name = Abbas, Abdullah, Sex = M }
+2021-01-17 07:22:30.551 +00:00 [INF] Actor { ActorID = 1805, Name = Abbasi, Riz, Sex = M }
+2021-01-17 07:22:30.554 +00:00 [INF] Actor { ActorID = 1923, Name = Abbey, Ian, Sex = M }
+2021-01-17 07:22:30.555 +00:00 [INF] Actor { ActorID = 1927, Name = Abbey, John, Sex = M }
+2021-01-17 07:22:30.557 +00:00 [INF] Actor { ActorID = 1929, Name = Abbey, Joshua, Sex = M }
+2021-01-17 07:22:30.558 +00:00 [INF] Actor { ActorID = 1930, Name = Abbey, Leo, Sex = M }
+2021-01-17 07:22:30.560 +00:00 [INF] Actor { ActorID = 1982, Name = Abbot, Bernie, Sex = M }
+2021-01-17 07:22:30.561 +00:00 [INF] Actor { ActorID = 1993, Name = Abbot, Jerry, Sex = M }
+2021-01-17 07:22:30.563 +00:00 [INF] Actor { ActorID = 2000, Name = Abbot, Paul, Sex = M }
+2021-01-17 07:22:30.564 +00:00 [INF] Actor { ActorID = 2007, Name = Abbot, Tommy, Sex = M }
+2021-01-17 07:22:30.565 +00:00 [INF] Actor { ActorID = 2036, Name = Abbott, Bruce (I), Sex = M }
+2021-01-17 07:22:30.569 +00:00 [INF] Actor { ActorID = 2039, Name = Abbott, Bud, Sex = M }
+2021-01-17 07:22:30.570 +00:00 [INF] Actor { ActorID = 2060, Name = Abbott, Dalton, Sex = M }
+2021-01-17 07:22:30.572 +00:00 [INF] Actor { ActorID = 2065, Name = Abbott, David (I), Sex = M }
+2021-01-17 07:22:30.573 +00:00 [INF] Actor { ActorID = 2085, Name = Abbott, Frankie, Sex = M }
+2021-01-17 07:22:30.574 +00:00 [INF] Actor { ActorID = 2117, Name = Abbott, Jamie (I), Sex = M }
+2021-01-17 07:22:30.575 +00:00 [INF] Actor { ActorID = 2131, Name = Abbott, John (I), Sex = M }
+2021-01-17 07:22:30.576 +00:00 [INF] Actor { ActorID = 2132, Name = Abbott, John (II), Sex = M }
+2021-01-17 07:22:30.577 +00:00 [INF] Actor { ActorID = 2154, Name = Abbott, Mark (I), Sex = M }
+2021-01-17 07:22:30.579 +00:00 [INF] Actor { ActorID = 2177, Name = Abbott, Paul (I), Sex = M }
+2021-01-17 07:22:30.615 +00:00 [INF] HTTP GET /DBTest responded 200 in 109.5249 ms
+2021-01-17 07:22:31.647 +00:00 [INF] Actor { ActorID = 4, Name = $hort, Too, Sex = M }
+2021-01-17 07:22:31.649 +00:00 [INF] Actor { ActorID = 16, Name = 'Bear'Boyd, Steven, Sex = M }
+2021-01-17 07:22:31.650 +00:00 [INF] Actor { ActorID = 28, Name = 'Dead End' Kids, The, Sex = M }
+2021-01-17 07:22:31.651 +00:00 [INF] Actor { ActorID = 566, Name = Aaby, Kristian, Sex = M }
+2021-01-17 07:22:31.652 +00:00 [INF] Actor { ActorID = 580, Name = , Sex = M }
+2021-01-17 07:22:31.654 +00:00 [INF] Actor { ActorID = 636, Name = Aaker, Lee, Sex = M }
+2021-01-17 07:22:31.655 +00:00 [INF] Actor { ActorID = 769, Name = Aamodt, Thor Michael, Sex = M }
+2021-01-17 07:22:31.656 +00:00 [INF] Actor { ActorID = 797, Name = Aar, Jim, Sex = M }
+2021-01-17 07:22:31.657 +00:00 [INF] Actor { ActorID = 802, Name = Aaran, Abraxas, Sex = M }
+2021-01-17 07:22:31.659 +00:00 [INF] Actor { ActorID = 808, Name = Aard, Frank J., Sex = M }
+2021-01-17 07:22:31.661 +00:00 [INF] Actor { ActorID = 817, Name = Aardvark Bragpuss, Fritz, Sex = M }
+2021-01-17 07:22:31.662 +00:00 [INF] Actor { ActorID = 851, Name = Aarniokoski, Douglas, Sex = M }
+2021-01-17 07:22:31.663 +00:00 [INF] Actor { ActorID = 888, Name = Aaron, Bob (I), Sex = M }
+2021-01-17 07:22:31.664 +00:00 [INF] Actor { ActorID = 894, Name = Aaron, Chad (I), Sex = M }
+2021-01-17 07:22:31.665 +00:00 [INF] Actor { ActorID = 923, Name = Aaron, James (I), Sex = M }
+2021-01-17 07:22:31.666 +00:00 [INF] Actor { ActorID = 962, Name = Aaron, Sam (I), Sex = M }
+2021-01-17 07:22:31.667 +00:00 [INF] Actor { ActorID = 978, Name = Aaron, Victor (I), Sex = M }
+2021-01-17 07:22:31.668 +00:00 [INF] Actor { ActorID = 989, Name = Aarons, Allan, Sex = M }
+2021-01-17 07:22:31.670 +00:00 [INF] Actor { ActorID = 1143, Name = Aasland, Derek, Sex = M }
+2021-01-17 07:22:31.671 +00:00 [INF] Actor { ActorID = 1276, Name = Abadal, Ignasi, Sex = M }
+2021-01-17 07:22:31.672 +00:00 [INF] Actor { ActorID = 1304, Name = Abadia, Oscar, Sex = M }
+2021-01-17 07:22:31.673 +00:00 [INF] Actor { ActorID = 1348, Name = Abadía, Julio, Sex = M }
+2021-01-17 07:22:31.674 +00:00 [INF] Actor { ActorID = 1391, Name = Abakaz, Suvit, Sex = M }
+2021-01-17 07:22:31.677 +00:00 [INF] Actor { ActorID = 1517, Name = Abascal, Paul, Sex = M }
+2021-01-17 07:22:31.678 +00:00 [INF] Actor { ActorID = 1535, Name = Abasolo, Roland T., Sex = M }
+2021-01-17 07:22:31.679 +00:00 [INF] Actor { ActorID = 1554, Name = Abatantuono, Diego, Sex = M }
+2021-01-17 07:22:31.680 +00:00 [INF] Actor { ActorID = 1556, Name = Abatcha, Saïdou, Sex = M }
+2021-01-17 07:22:31.681 +00:00 [INF] Actor { ActorID = 1583, Name = Abatemarco, Tony, Sex = M }
+2021-01-17 07:22:31.682 +00:00 [INF] Actor { ActorID = 1588, Name = Abatiell, Robert, Sex = M }
+2021-01-17 07:22:31.683 +00:00 [INF] Actor { ActorID = 1595, Name = Abattucci, Serge, Sex = M }
+2021-01-17 07:22:31.684 +00:00 [INF] Actor { ActorID = 1710, Name = Abbas, Abdullah, Sex = M }
+2021-01-17 07:22:31.685 +00:00 [INF] Actor { ActorID = 1805, Name = Abbasi, Riz, Sex = M }
+2021-01-17 07:22:31.686 +00:00 [INF] Actor { ActorID = 1923, Name = Abbey, Ian, Sex = M }
+2021-01-17 07:22:31.687 +00:00 [INF] Actor { ActorID = 1927, Name = Abbey, John, Sex = M }
+2021-01-17 07:22:31.688 +00:00 [INF] Actor { ActorID = 1929, Name = Abbey, Joshua, Sex = M }
+2021-01-17 07:22:31.689 +00:00 [INF] Actor { ActorID = 1930, Name = Abbey, Leo, Sex = M }
+2021-01-17 07:22:31.692 +00:00 [INF] Actor { ActorID = 1982, Name = Abbot, Bernie, Sex = M }
+2021-01-17 07:22:31.693 +00:00 [INF] Actor { ActorID = 1993, Name = Abbot, Jerry, Sex = M }
+2021-01-17 07:22:31.694 +00:00 [INF] Actor { ActorID = 2000, Name = Abbot, Paul, Sex = M }
+2021-01-17 07:22:31.695 +00:00 [INF] Actor { ActorID = 2007, Name = Abbot, Tommy, Sex = M }
+2021-01-17 07:22:31.696 +00:00 [INF] Actor { ActorID = 2036, Name = Abbott, Bruce (I), Sex = M }
+2021-01-17 07:22:31.697 +00:00 [INF] Actor { ActorID = 2039, Name = Abbott, Bud, Sex = M }
+2021-01-17 07:22:31.699 +00:00 [INF] Actor { ActorID = 2060, Name = Abbott, Dalton, Sex = M }
+2021-01-17 07:22:31.700 +00:00 [INF] Actor { ActorID = 2065, Name = Abbott, David (I), Sex = M }
+2021-01-17 07:22:31.701 +00:00 [INF] Actor { ActorID = 2085, Name = Abbott, Frankie, Sex = M }
+2021-01-17 07:22:31.702 +00:00 [INF] Actor { ActorID = 2117, Name = Abbott, Jamie (I), Sex = M }
+2021-01-17 07:22:31.703 +00:00 [INF] Actor { ActorID = 2131, Name = Abbott, John (I), Sex = M }
+2021-01-17 07:22:31.704 +00:00 [INF] Actor { ActorID = 2132, Name = Abbott, John (II), Sex = M }
+2021-01-17 07:22:31.705 +00:00 [INF] Actor { ActorID = 2154, Name = Abbott, Mark (I), Sex = M }
+2021-01-17 07:22:31.706 +00:00 [INF] Actor { ActorID = 2177, Name = Abbott, Paul (I), Sex = M }
+2021-01-17 07:22:31.742 +00:00 [INF] HTTP GET /DBTest responded 200 in 96.1278 ms
+2021-01-17 07:22:32.686 +00:00 [INF] Actor { ActorID = 4, Name = $hort, Too, Sex = M }
+2021-01-17 07:22:32.687 +00:00 [INF] Actor { ActorID = 16, Name = 'Bear'Boyd, Steven, Sex = M }
+2021-01-17 07:22:32.688 +00:00 [INF] Actor { ActorID = 28, Name = 'Dead End' Kids, The, Sex = M }
+2021-01-17 07:22:32.689 +00:00 [INF] Actor { ActorID = 566, Name = Aaby, Kristian, Sex = M }
+2021-01-17 07:22:32.691 +00:00 [INF] Actor { ActorID = 580, Name = , Sex = M }
+2021-01-17 07:22:32.692 +00:00 [INF] Actor { ActorID = 636, Name = Aaker, Lee, Sex = M }
+2021-01-17 07:22:32.693 +00:00 [INF] Actor { ActorID = 769, Name = Aamodt, Thor Michael, Sex = M }
+2021-01-17 07:22:32.694 +00:00 [INF] Actor { ActorID = 797, Name = Aar, Jim, Sex = M }
+2021-01-17 07:22:32.695 +00:00 [INF] Actor { ActorID = 802, Name = Aaran, Abraxas, Sex = M }
+2021-01-17 07:22:32.696 +00:00 [INF] Actor { ActorID = 808, Name = Aard, Frank J., Sex = M }
+2021-01-17 07:22:32.698 +00:00 [INF] Actor { ActorID = 817, Name = Aardvark Bragpuss, Fritz, Sex = M }
+2021-01-17 07:22:32.699 +00:00 [INF] Actor { ActorID = 851, Name = Aarniokoski, Douglas, Sex = M }
+2021-01-17 07:22:32.700 +00:00 [INF] Actor { ActorID = 888, Name = Aaron, Bob (I), Sex = M }
+2021-01-17 07:22:32.701 +00:00 [INF] Actor { ActorID = 894, Name = Aaron, Chad (I), Sex = M }
+2021-01-17 07:22:32.702 +00:00 [INF] Actor { ActorID = 923, Name = Aaron, James (I), Sex = M }
+2021-01-17 07:22:32.703 +00:00 [INF] Actor { ActorID = 962, Name = Aaron, Sam (I), Sex = M }
+2021-01-17 07:22:32.704 +00:00 [INF] Actor { ActorID = 978, Name = Aaron, Victor (I), Sex = M }
+2021-01-17 07:22:32.705 +00:00 [INF] Actor { ActorID = 989, Name = Aarons, Allan, Sex = M }
+2021-01-17 07:22:32.706 +00:00 [INF] Actor { ActorID = 1143, Name = Aasland, Derek, Sex = M }
+2021-01-17 07:22:32.707 +00:00 [INF] Actor { ActorID = 1276, Name = Abadal, Ignasi, Sex = M }
+2021-01-17 07:22:32.711 +00:00 [INF] Actor { ActorID = 1304, Name = Abadia, Oscar, Sex = M }
+2021-01-17 07:22:32.712 +00:00 [INF] Actor { ActorID = 1348, Name = Abadía, Julio, Sex = M }
+2021-01-17 07:22:32.713 +00:00 [INF] Actor { ActorID = 1391, Name = Abakaz, Suvit, Sex = M }
+2021-01-17 07:22:32.714 +00:00 [INF] Actor { ActorID = 1517, Name = Abascal, Paul, Sex = M }
+2021-01-17 07:22:32.715 +00:00 [INF] Actor { ActorID = 1535, Name = Abasolo, Roland T., Sex = M }
+2021-01-17 07:22:32.717 +00:00 [INF] Actor { ActorID = 1554, Name = Abatantuono, Diego, Sex = M }
+2021-01-17 07:22:32.718 +00:00 [INF] Actor { ActorID = 1556, Name = Abatcha, Saïdou, Sex = M }
+2021-01-17 07:22:32.719 +00:00 [INF] Actor { ActorID = 1583, Name = Abatemarco, Tony, Sex = M }
+2021-01-17 07:22:32.720 +00:00 [INF] Actor { ActorID = 1588, Name = Abatiell, Robert, Sex = M }
+2021-01-17 07:22:32.721 +00:00 [INF] Actor { ActorID = 1595, Name = Abattucci, Serge, Sex = M }
+2021-01-17 07:22:32.722 +00:00 [INF] Actor { ActorID = 1710, Name = Abbas, Abdullah, Sex = M }
+2021-01-17 07:22:32.723 +00:00 [INF] Actor { ActorID = 1805, Name = Abbasi, Riz, Sex = M }
+2021-01-17 07:22:32.726 +00:00 [INF] Actor { ActorID = 1923, Name = Abbey, Ian, Sex = M }
+2021-01-17 07:22:32.727 +00:00 [INF] Actor { ActorID = 1927, Name = Abbey, John, Sex = M }
+2021-01-17 07:22:32.728 +00:00 [INF] Actor { ActorID = 1929, Name = Abbey, Joshua, Sex = M }
+2021-01-17 07:22:32.729 +00:00 [INF] Actor { ActorID = 1930, Name = Abbey, Leo, Sex = M }
+2021-01-17 07:22:32.730 +00:00 [INF] Actor { ActorID = 1982, Name = Abbot, Bernie, Sex = M }
+2021-01-17 07:22:32.731 +00:00 [INF] Actor { ActorID = 1993, Name = Abbot, Jerry, Sex = M }
+2021-01-17 07:22:32.733 +00:00 [INF] Actor { ActorID = 2000, Name = Abbot, Paul, Sex = M }
+2021-01-17 07:22:32.734 +00:00 [INF] Actor { ActorID = 2007, Name = Abbot, Tommy, Sex = M }
+2021-01-17 07:22:32.735 +00:00 [INF] Actor { ActorID = 2036, Name = Abbott, Bruce (I), Sex = M }
+2021-01-17 07:22:32.736 +00:00 [INF] Actor { ActorID = 2039, Name = Abbott, Bud, Sex = M }
+2021-01-17 07:22:32.737 +00:00 [INF] Actor { ActorID = 2060, Name = Abbott, Dalton, Sex = M }
+2021-01-17 07:22:32.738 +00:00 [INF] Actor { ActorID = 2065, Name = Abbott, David (I), Sex = M }
+2021-01-17 07:22:32.741 +00:00 [INF] Actor { ActorID = 2085, Name = Abbott, Frankie, Sex = M }
+2021-01-17 07:22:32.742 +00:00 [INF] Actor { ActorID = 2117, Name = Abbott, Jamie (I), Sex = M }
+2021-01-17 07:22:32.743 +00:00 [INF] Actor { ActorID = 2131, Name = Abbott, John (I), Sex = M }
+2021-01-17 07:22:32.744 +00:00 [INF] Actor { ActorID = 2132, Name = Abbott, John (II), Sex = M }
+2021-01-17 07:22:32.745 +00:00 [INF] Actor { ActorID = 2154, Name = Abbott, Mark (I), Sex = M }
+2021-01-17 07:22:32.747 +00:00 [INF] Actor { ActorID = 2177, Name = Abbott, Paul (I), Sex = M }
+2021-01-17 07:22:32.784 +00:00 [INF] HTTP GET /DBTest responded 200 in 99.6057 ms
+2021-01-17 07:51:21.296 +00:00 [INF] Starting up
+2021-01-17 07:51:21.591 +00:00 [INF] Now listening on: https://localhost:5001
+2021-01-17 07:51:21.599 +00:00 [INF] Now listening on: http://localhost:5000
+2021-01-17 07:51:21.601 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-01-17 07:51:21.602 +00:00 [INF] Hosting environment: Development
+2021-01-17 07:51:21.604 +00:00 [INF] Content root path: C:\dev\test\RecordTest\WebApplication1
+2021-01-17 07:51:21.984 +00:00 [INF] HTTP GET / responded 200 in 91.4916 ms
+2021-01-17 07:51:24.802 +00:00 [ERR] HTTP GET /DBTest responded 500 in 186.8878 ms
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at WebApplication1.Pages.Pages_DBTest.ExecuteAsync() in C:\dev\test\RecordTest\WebApplication1\Pages\DBTest.cshtml:line 30
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2021-01-17 07:51:24.899 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at WebApplication1.Pages.Pages_DBTest.ExecuteAsync() in C:\dev\test\RecordTest\WebApplication1\Pages\DBTest.cshtml:line 30
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-01-17 07:51:35.584 +00:00 [INF] Application is shutting down...
+2021-01-17 07:52:59.071 +00:00 [INF] Starting up
+2021-01-17 07:52:59.385 +00:00 [INF] Now listening on: https://localhost:5001
+2021-01-17 07:52:59.392 +00:00 [INF] Now listening on: http://localhost:5000
+2021-01-17 07:52:59.394 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-01-17 07:52:59.396 +00:00 [INF] Hosting environment: Development
+2021-01-17 07:52:59.397 +00:00 [INF] Content root path: C:\dev\test\RecordTest\WebApplication1
+2021-01-17 07:52:59.782 +00:00 [INF] HTTP GET / responded 200 in 91.4532 ms
+2021-01-17 07:53:01.901 +00:00 [INF] HTTP GET /DBTest responded 200 in 198.6127 ms
+2021-01-17 07:53:03.345 +00:00 [INF] HTTP GET / responded 200 in 0.9532 ms
+2021-01-17 07:53:05.985 +00:00 [INF] Application is shutting down...
+2021-01-17 07:58:31.328 +00:00 [INF] Starting up
+2021-01-17 07:58:31.621 +00:00 [INF] Now listening on: https://localhost:5001
+2021-01-17 07:58:31.625 +00:00 [INF] Now listening on: http://localhost:5000
+2021-01-17 07:58:31.625 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-01-17 07:58:31.626 +00:00 [INF] Hosting environment: Development
+2021-01-17 07:58:31.627 +00:00 [INF] Content root path: C:\dev\test\RecordTest\WebApplication1
+2021-01-17 07:58:32.017 +00:00 [INF] HTTP GET / responded 200 in 91.4061 ms
+2021-01-17 07:58:35.060 +00:00 [INF] HTTP GET /DBTest responded 200 in 202.3765 ms
+2021-01-17 07:58:36.035 +00:00 [INF] HTTP GET / responded 200 in 1.0616 ms
+2021-01-17 07:58:38.010 +00:00 [INF] Application is shutting down...
+2021-01-17 07:58:58.494 +00:00 [INF] Starting up
+2021-01-17 07:58:58.782 +00:00 [INF] Now listening on: https://localhost:5001
+2021-01-17 07:58:58.786 +00:00 [INF] Now listening on: http://localhost:5000
+2021-01-17 07:58:58.786 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-01-17 07:58:58.787 +00:00 [INF] Hosting environment: Development
+2021-01-17 07:58:58.788 +00:00 [INF] Content root path: C:\dev\test\RecordTest\WebApplication1
+2021-01-17 07:58:59.202 +00:00 [INF] HTTP GET / responded 200 in 92.3892 ms
+2021-01-17 07:59:01.677 +00:00 [INF] HTTP GET /DBTest responded 200 in 261.7495 ms
+2021-01-17 07:59:03.023 +00:00 [INF] HTTP GET / responded 200 in 1.0809 ms
+2021-01-17 07:59:04.710 +00:00 [INF] Application is shutting down...
+2021-01-17 08:49:21.512 +00:00 [INF] Starting up
+2021-01-17 08:49:21.814 +00:00 [INF] Now listening on: https://localhost:5001
+2021-01-17 08:49:21.817 +00:00 [INF] Now listening on: http://localhost:5000
+2021-01-17 08:49:21.818 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-01-17 08:49:21.819 +00:00 [INF] Hosting environment: Development
+2021-01-17 08:49:21.820 +00:00 [INF] Content root path: C:\dev\test\RecordTest\WebApplication1
+2021-01-17 08:49:22.267 +00:00 [INF] HTTP GET / responded 200 in 117.9361 ms
+2021-01-17 08:49:24.018 +00:00 [INF] HTTP GET /Login responded 200 in 78.2780 ms
+2021-01-17 08:49:27.162 +00:00 [INF] Application is shutting down...
+2021-01-17 08:50:31.435 +00:00 [INF] Starting up
+2021-01-17 08:50:31.761 +00:00 [INF] Now listening on: https://localhost:5001
+2021-01-17 08:50:31.764 +00:00 [INF] Now listening on: http://localhost:5000
+2021-01-17 08:50:31.765 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-01-17 08:50:31.765 +00:00 [INF] Hosting environment: Development
+2021-01-17 08:50:31.766 +00:00 [INF] Content root path: C:\dev\test\RecordTest\WebApplication1
+2021-01-17 08:50:32.139 +00:00 [INF] HTTP GET / responded 200 in 93.3567 ms
+2021-01-17 08:50:34.162 +00:00 [INF] HTTP GET /Login responded 200 in 74.7548 ms
+2021-01-17 08:50:46.223 +00:00 [INF] Starting up
+2021-01-17 08:50:46.535 +00:00 [INF] Now listening on: https://localhost:5001
+2021-01-17 08:50:46.538 +00:00 [INF] Now listening on: http://localhost:5000
+2021-01-17 08:50:46.539 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-01-17 08:50:46.540 +00:00 [INF] Hosting environment: Development
+2021-01-17 08:50:46.541 +00:00 [INF] Content root path: C:\dev\test\RecordTest\WebApplication1
+2021-01-17 08:50:46.952 +00:00 [INF] HTTP GET / responded 200 in 99.1728 ms
+2021-01-17 08:50:48.581 +00:00 [INF] HTTP GET /Login responded 200 in 61.6693 ms
+2021-01-17 08:50:52.501 +00:00 [INF] Application is shutting down...
+2021-01-17 09:10:17.446 +00:00 [INF] Starting up
+2021-01-17 09:10:18.436 +00:00 [INF] Now listening on: https://localhost:5001
+2021-01-17 09:10:18.440 +00:00 [INF] Now listening on: http://localhost:5000
+2021-01-17 09:10:18.441 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-01-17 09:10:18.442 +00:00 [INF] Hosting environment: Development
+2021-01-17 09:10:18.443 +00:00 [INF] Content root path: C:\dev\test\RecordTest\WebApplication1
+2021-01-17 09:10:19.419 +00:00 [INF] HTTP GET / responded 200 in 181.2211 ms
+2021-01-17 09:10:56.779 +00:00 [INF] HTTP GET /Login responded 200 in 35833.5358 ms
+2021-01-17 09:11:38.479 +00:00 [INF] Starting up
+2021-01-17 09:11:38.764 +00:00 [INF] Now listening on: https://localhost:5001
+2021-01-17 09:11:38.767 +00:00 [INF] Now listening on: http://localhost:5000
+2021-01-17 09:11:38.768 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-01-17 09:11:38.769 +00:00 [INF] Hosting environment: Development
+2021-01-17 09:11:38.770 +00:00 [INF] Content root path: C:\dev\test\RecordTest\WebApplication1
+2021-01-17 09:11:39.238 +00:00 [INF] HTTP GET / responded 200 in 93.3974 ms
+2021-01-17 09:11:40.685 +00:00 [INF] HTTP GET /Login responded 200 in 71.6755 ms
+2021-01-17 09:13:07.862 +00:00 [INF] Application is shutting down...
+2021-01-17 09:14:03.917 +00:00 [INF] Starting up
+2021-01-17 09:14:04.224 +00:00 [INF] Now listening on: https://localhost:5001
+2021-01-17 09:14:04.228 +00:00 [INF] Now listening on: http://localhost:5000
+2021-01-17 09:14:04.229 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-01-17 09:14:04.229 +00:00 [INF] Hosting environment: Development
+2021-01-17 09:14:04.230 +00:00 [INF] Content root path: C:\dev\test\RecordTest\WebApplication1
+2021-01-17 09:14:04.639 +00:00 [INF] HTTP GET / responded 200 in 93.6539 ms
+2021-01-17 09:14:06.571 +00:00 [INF] HTTP GET /Login responded 200 in 66.6531 ms
+2021-01-17 09:14:08.052 +00:00 [INF] HTTP POST /Login responded 302 in 19.8639 ms
+2021-01-17 09:14:08.059 +00:00 [INF] HTTP GET / responded 200 in 0.8250 ms
+2021-01-17 09:14:09.940 +00:00 [INF] HTTP GET /Login responded 200 in 2.6858 ms
+2021-01-17 09:14:12.581 +00:00 [INF] HTTP POST /Login responded 302 in 0.8272 ms
+2021-01-17 09:14:12.588 +00:00 [INF] HTTP GET / responded 200 in 1.1021 ms
+2021-01-17 09:19:29.857 +00:00 [INF] Starting up
+2021-01-17 09:19:30.145 +00:00 [INF] Now listening on: https://localhost:5001
+2021-01-17 09:19:30.148 +00:00 [INF] Now listening on: http://localhost:5000
+2021-01-17 09:19:30.149 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-01-17 09:19:30.150 +00:00 [INF] Hosting environment: Development
+2021-01-17 09:19:30.150 +00:00 [INF] Content root path: C:\dev\test\RecordTest\WebApplication1
+2021-01-17 09:19:30.572 +00:00 [INF] HTTP GET / responded 200 in 94.8404 ms
+2021-01-17 09:19:31.738 +00:00 [INF] HTTP GET /Login responded 200 in 50.1860 ms
+2021-01-17 09:19:33.049 +00:00 [INF] HTTP POST /Login responded 200 in 4.2969 ms
+2021-01-17 09:19:33.955 +00:00 [INF] HTTP POST /Login responded 200 in 2.0082 ms
+2021-01-17 09:19:34.794 +00:00 [INF] HTTP POST /Login responded 200 in 1.2248 ms
+2021-01-17 09:19:38.948 +00:00 [INF] Application is shutting down...
+2021-01-17 09:22:09.924 +00:00 [INF] Starting up
+2021-01-17 09:22:10.251 +00:00 [INF] Now listening on: https://localhost:5001
+2021-01-17 09:22:10.254 +00:00 [INF] Now listening on: http://localhost:5000
+2021-01-17 09:22:10.255 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-01-17 09:22:10.256 +00:00 [INF] Hosting environment: Development
+2021-01-17 09:22:10.256 +00:00 [INF] Content root path: C:\dev\test\RecordTest\WebApplication1
+2021-01-17 09:22:10.630 +00:00 [INF] HTTP GET / responded 200 in 94.7590 ms
+2021-01-17 09:22:12.367 +00:00 [INF] HTTP GET /Login responded 200 in 59.5183 ms
+2021-01-17 09:22:15.681 +00:00 [INF] HTTP POST /Login responded 200 in 17.9606 ms
+2021-01-17 09:25:05.473 +00:00 [INF] Starting up
+2021-01-17 09:25:06.557 +00:00 [INF] Now listening on: https://localhost:5001
+2021-01-17 09:25:06.561 +00:00 [INF] Now listening on: http://localhost:5000
+2021-01-17 09:25:06.561 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-01-17 09:25:06.562 +00:00 [INF] Hosting environment: Development
+2021-01-17 09:25:06.563 +00:00 [INF] Content root path: C:\dev\test\RecordTest\WebApplication1
+2021-01-17 09:25:07.255 +00:00 [INF] HTTP GET / responded 200 in 156.6746 ms
+2021-01-17 09:25:08.767 +00:00 [INF] HTTP GET /Login responded 200 in 59.2036 ms
+2021-01-17 09:28:15.409 +00:00 [INF] Starting up
+2021-01-17 09:28:15.701 +00:00 [INF] Now listening on: https://localhost:5001
+2021-01-17 09:28:15.705 +00:00 [INF] Now listening on: http://localhost:5000
+2021-01-17 09:28:15.705 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-01-17 09:28:15.706 +00:00 [INF] Hosting environment: Development
+2021-01-17 09:28:15.707 +00:00 [INF] Content root path: C:\dev\test\RecordTest\WebApplication1
+2021-01-17 09:28:16.114 +00:00 [INF] HTTP GET / responded 200 in 92.8712 ms
+2021-01-17 09:28:17.646 +00:00 [INF] HTTP GET /Login responded 200 in 61.6950 ms
+2021-01-17 09:28:21.406 +00:00 [INF] HTTP POST /Login responded 200 in 18.0769 ms
+2021-01-17 09:28:24.209 +00:00 [INF] HTTP POST /Login responded 200 in 2.0943 ms
+2021-01-17 09:28:43.173 +00:00 [INF] Application is shutting down...

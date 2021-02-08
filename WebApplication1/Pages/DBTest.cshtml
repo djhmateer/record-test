@@ -1,0 +1,51 @@
+﻿@page
+@model WebApplication1.Pages.DBTestModel
+@{
+    ViewData["Title"] = "DBTest";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<h4>@*ConnectionString: @Model.ConnectionString*@</h4>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(x => x.Actors[0].ActorID)
+
+            </th>
+            <th>
+                @Html.DisplayNameFor(x => x.Actors[0].Name)
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(x => x.Actors[0].Sex)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+
+
+        @foreach (var a in Model.Actors)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(x => a.ActorID)
+                </td>
+                <td>
+                    @Html.DisplayFor(x => a.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(x => a.Sex)
+                </td>
+
+                @*<td>
+                        <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
+                        <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
+                        <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+                    </td>*@
+            </tr>
+        }
+    </tbody>
+</table>

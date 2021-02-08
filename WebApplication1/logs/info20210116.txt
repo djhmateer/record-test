@@ -1,0 +1,783 @@
+2021-01-16 11:39:13.995 +00:00 [INF] Starting up
+2021-01-16 11:39:14.382 +00:00 [INF] Now listening on: https://localhost:5001
+2021-01-16 11:39:14.386 +00:00 [INF] Now listening on: http://localhost:5000
+2021-01-16 11:39:14.386 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-01-16 11:39:14.387 +00:00 [INF] Hosting environment: Development
+2021-01-16 11:39:14.388 +00:00 [INF] Content root path: C:\dev\test\RecordTest\WebApplication1
+2021-01-16 11:39:15.215 +00:00 [INF] HTTP GET / responded 200 in 125.8041 ms
+2021-01-16 11:39:22.925 +00:00 [INF] Application is shutting down...
+2021-01-16 11:46:45.672 +00:00 [INF] Starting up
+2021-01-16 11:46:46.010 +00:00 [INF] Now listening on: https://localhost:5001
+2021-01-16 11:46:46.014 +00:00 [INF] Now listening on: http://localhost:5000
+2021-01-16 11:46:46.015 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-01-16 11:46:46.016 +00:00 [INF] Hosting environment: Development
+2021-01-16 11:46:46.016 +00:00 [INF] Content root path: C:\dev\test\RecordTest\WebApplication1
+2021-01-16 11:46:46.359 +00:00 [INF] HTTP GET / responded 200 in 92.8536 ms
+2021-01-16 11:47:03.136 +00:00 [ERR] HTTP GET /DBTest responded 500 in 14884.5537 ms
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+ ---> System.ComponentModel.Win32Exception (2): The system cannot find the file specified.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 417
+   at WebApplication1.Db.GetUsers(String connectionString) in C:\dev\test\RecordTest\WebApplication1\Db.cs:line 21
+   at WebApplication1.Pages.DBTestModel.OnGetAsync() in C:\dev\test\RecordTest\WebApplication1\Pages\DBTest.cshtml.cs:line 26
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.NonGenericTaskHandlerMethod.Execute(Object receiver, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeHandlerMethodAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeNextPageFilterAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Rethrow(PageHandlerExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:2,State:0,Class:20
+2021-01-16 11:47:03.241 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+ ---> System.ComponentModel.Win32Exception (2): The system cannot find the file specified.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 417
+   at WebApplication1.Db.GetUsers(String connectionString) in C:\dev\test\RecordTest\WebApplication1\Db.cs:line 21
+   at WebApplication1.Pages.DBTestModel.OnGetAsync() in C:\dev\test\RecordTest\WebApplication1\Pages\DBTest.cshtml.cs:line 26
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.NonGenericTaskHandlerMethod.Execute(Object receiver, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeHandlerMethodAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeNextPageFilterAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Rethrow(PageHandlerExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:2,State:0,Class:20
+2021-01-16 11:47:23.390 +00:00 [INF] Application is shutting down...
+2021-01-16 11:47:51.311 +00:00 [INF] Starting up
+2021-01-16 11:47:52.581 +00:00 [INF] Now listening on: https://localhost:5001
+2021-01-16 11:47:52.587 +00:00 [INF] Now listening on: http://localhost:5000
+2021-01-16 11:47:52.588 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-01-16 11:47:52.589 +00:00 [INF] Hosting environment: Development
+2021-01-16 11:47:52.590 +00:00 [INF] Content root path: C:\dev\test\RecordTest\WebApplication1
+2021-01-16 11:47:53.520 +00:00 [INF] HTTP GET / responded 200 in 149.8725 ms
+2021-01-16 11:48:33.847 +00:00 [ERR] HTTP GET /DBTest responded 500 in 29464.9819 ms
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+ ---> System.ComponentModel.Win32Exception (2): The system cannot find the file specified.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 417
+   at WebApplication1.Db.GetUsers(String connectionString) in C:\dev\test\RecordTest\WebApplication1\Db.cs:line 21
+   at WebApplication1.Pages.DBTestModel.OnGetAsync() in C:\dev\test\RecordTest\WebApplication1\Pages\DBTest.cshtml.cs:line 26
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.NonGenericTaskHandlerMethod.Execute(Object receiver, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeHandlerMethodAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeNextPageFilterAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Rethrow(PageHandlerExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:2,State:0,Class:20
+2021-01-16 11:48:33.916 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+ ---> System.ComponentModel.Win32Exception (2): The system cannot find the file specified.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 417
+   at WebApplication1.Db.GetUsers(String connectionString) in C:\dev\test\RecordTest\WebApplication1\Db.cs:line 21
+   at WebApplication1.Pages.DBTestModel.OnGetAsync() in C:\dev\test\RecordTest\WebApplication1\Pages\DBTest.cshtml.cs:line 26
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.NonGenericTaskHandlerMethod.Execute(Object receiver, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeHandlerMethodAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeNextPageFilterAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Rethrow(PageHandlerExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:2,State:0,Class:20
+2021-01-16 11:49:54.914 +00:00 [ERR] HTTP GET /DBTest responded 500 in 53041.8893 ms
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+ ---> System.ComponentModel.Win32Exception (2): The system cannot find the file specified.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 417
+   at WebApplication1.Db.GetUsers(String connectionString) in C:\dev\test\RecordTest\WebApplication1\Db.cs:line 21
+   at WebApplication1.Pages.DBTestModel.OnGetAsync() in C:\dev\test\RecordTest\WebApplication1\Pages\DBTest.cshtml.cs:line 26
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.NonGenericTaskHandlerMethod.Execute(Object receiver, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeHandlerMethodAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeNextPageFilterAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Rethrow(PageHandlerExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:2,State:0,Class:20
+2021-01-16 11:49:54.931 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+ ---> System.ComponentModel.Win32Exception (2): The system cannot find the file specified.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 417
+   at WebApplication1.Db.GetUsers(String connectionString) in C:\dev\test\RecordTest\WebApplication1\Db.cs:line 21
+   at WebApplication1.Pages.DBTestModel.OnGetAsync() in C:\dev\test\RecordTest\WebApplication1\Pages\DBTest.cshtml.cs:line 26
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.NonGenericTaskHandlerMethod.Execute(Object receiver, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeHandlerMethodAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeNextPageFilterAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Rethrow(PageHandlerExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:2,State:0,Class:20
+2021-01-16 14:48:41.357 +00:00 [INF] Starting up
+2021-01-16 14:48:41.651 +00:00 [INF] Now listening on: https://localhost:5001
+2021-01-16 14:48:41.654 +00:00 [INF] Now listening on: http://localhost:5000
+2021-01-16 14:48:41.655 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-01-16 14:48:41.656 +00:00 [INF] Hosting environment: Development
+2021-01-16 14:48:41.656 +00:00 [INF] Content root path: C:\dev\test\RecordTest\WebApplication1
+2021-01-16 14:48:42.123 +00:00 [INF] HTTP GET / responded 200 in 101.1536 ms
+2021-01-16 14:48:45.252 +00:00 [ERR] HTTP GET /DBTest responded 500 in 148.8497 ms
+System.Data.SqlClient.SqlException (0x80131904): Failed to generate SSPI context.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 417
+   at WebApplication1.Db.GetUsers(String connectionString) in C:\dev\test\RecordTest\WebApplication1\Db.cs:line 21
+   at WebApplication1.Pages.DBTestModel.OnGetAsync() in C:\dev\test\RecordTest\WebApplication1\Pages\DBTest.cshtml.cs:line 26
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.NonGenericTaskHandlerMethod.Execute(Object receiver, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeHandlerMethodAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeNextPageFilterAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Rethrow(PageHandlerExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+ClientConnectionId:0dadd7e2-bef5-43cf-9e6c-d3db3ff4d7a4
+2021-01-16 14:48:45.301 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Data.SqlClient.SqlException (0x80131904): Failed to generate SSPI context.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 417
+   at WebApplication1.Db.GetUsers(String connectionString) in C:\dev\test\RecordTest\WebApplication1\Db.cs:line 21
+   at WebApplication1.Pages.DBTestModel.OnGetAsync() in C:\dev\test\RecordTest\WebApplication1\Pages\DBTest.cshtml.cs:line 26
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.NonGenericTaskHandlerMethod.Execute(Object receiver, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeHandlerMethodAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeNextPageFilterAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Rethrow(PageHandlerExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ClientConnectionId:0dadd7e2-bef5-43cf-9e6c-d3db3ff4d7a4
+2021-01-16 14:49:55.852 +00:00 [INF] Application is shutting down...
+2021-01-16 14:50:33.620 +00:00 [INF] Starting up
+2021-01-16 14:50:33.906 +00:00 [INF] Now listening on: https://localhost:5001
+2021-01-16 14:50:33.910 +00:00 [INF] Now listening on: http://localhost:5000
+2021-01-16 14:50:33.911 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-01-16 14:50:33.911 +00:00 [INF] Hosting environment: Development
+2021-01-16 14:50:33.912 +00:00 [INF] Content root path: C:\dev\test\RecordTest\WebApplication1
+2021-01-16 14:50:34.357 +00:00 [INF] HTTP GET / responded 200 in 95.6782 ms
+2021-01-16 14:50:36.816 +00:00 [ERR] HTTP GET /DBTest responded 500 in 129.5774 ms
+System.Data.SqlClient.SqlException (0x80131904): Failed to generate SSPI context.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 417
+   at WebApplication1.Db.GetUsers(String connectionString) in C:\dev\test\RecordTest\WebApplication1\Db.cs:line 21
+   at WebApplication1.Pages.DBTestModel.OnGetAsync() in C:\dev\test\RecordTest\WebApplication1\Pages\DBTest.cshtml.cs:line 26
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.NonGenericTaskHandlerMethod.Execute(Object receiver, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeHandlerMethodAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeNextPageFilterAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Rethrow(PageHandlerExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+ClientConnectionId:7739c5a0-7dd6-42a4-a678-0dcf9fc0c448
+2021-01-16 14:50:36.865 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Data.SqlClient.SqlException (0x80131904): Failed to generate SSPI context.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 417
+   at WebApplication1.Db.GetUsers(String connectionString) in C:\dev\test\RecordTest\WebApplication1\Db.cs:line 21
+   at WebApplication1.Pages.DBTestModel.OnGetAsync() in C:\dev\test\RecordTest\WebApplication1\Pages\DBTest.cshtml.cs:line 26
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.NonGenericTaskHandlerMethod.Execute(Object receiver, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeHandlerMethodAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeNextPageFilterAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Rethrow(PageHandlerExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ClientConnectionId:7739c5a0-7dd6-42a4-a678-0dcf9fc0c448
+2021-01-16 14:51:23.770 +00:00 [INF] Starting up
+2021-01-16 14:51:24.956 +00:00 [INF] Now listening on: https://localhost:5001
+2021-01-16 14:51:24.959 +00:00 [INF] Now listening on: http://localhost:5000
+2021-01-16 14:51:24.960 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-01-16 14:51:24.961 +00:00 [INF] Hosting environment: Development
+2021-01-16 14:51:24.962 +00:00 [INF] Content root path: C:\dev\test\RecordTest\WebApplication1
+2021-01-16 14:51:25.961 +00:00 [INF] HTTP GET / responded 200 in 159.1802 ms
+2021-01-16 14:51:49.028 +00:00 [ERR] HTTP GET /DBTest responded 500 in 18992.3409 ms
+System.Data.SqlClient.SqlException (0x80131904): Failed to generate SSPI context.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 417
+   at WebApplication1.Db.GetUsers(String connectionString) in C:\dev\test\RecordTest\WebApplication1\Db.cs:line 21
+   at WebApplication1.Pages.DBTestModel.OnGetAsync() in C:\dev\test\RecordTest\WebApplication1\Pages\DBTest.cshtml.cs:line 26
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.NonGenericTaskHandlerMethod.Execute(Object receiver, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeHandlerMethodAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeNextPageFilterAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Rethrow(PageHandlerExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+ClientConnectionId:62abf6eb-1d27-49fe-a705-1b2f43449367
+2021-01-16 14:51:49.098 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Data.SqlClient.SqlException (0x80131904): Failed to generate SSPI context.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 417
+   at WebApplication1.Db.GetUsers(String connectionString) in C:\dev\test\RecordTest\WebApplication1\Db.cs:line 21
+   at WebApplication1.Pages.DBTestModel.OnGetAsync() in C:\dev\test\RecordTest\WebApplication1\Pages\DBTest.cshtml.cs:line 26
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.NonGenericTaskHandlerMethod.Execute(Object receiver, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeHandlerMethodAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeNextPageFilterAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Rethrow(PageHandlerExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ClientConnectionId:62abf6eb-1d27-49fe-a705-1b2f43449367
+2021-01-16 14:55:58.679 +00:00 [INF] Starting up
+2021-01-16 14:55:58.965 +00:00 [INF] Now listening on: https://localhost:5001
+2021-01-16 14:55:58.969 +00:00 [INF] Now listening on: http://localhost:5000
+2021-01-16 14:55:58.969 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-01-16 14:55:58.970 +00:00 [INF] Hosting environment: Development
+2021-01-16 14:55:58.971 +00:00 [INF] Content root path: C:\dev\test\RecordTest\WebApplication1
+2021-01-16 14:55:59.427 +00:00 [INF] HTTP GET / responded 200 in 92.3478 ms
+2021-01-16 14:56:01.382 +00:00 [ERR] HTTP GET /DBTest responded 500 in 121.5641 ms
+System.Data.SqlClient.SqlException (0x80131904): A connection was successfully established with the server, but then an error occurred during the login process. (provider: Named Pipes Provider, error: 0 - No process is on the other end of the pipe.)
+ ---> System.ComponentModel.Win32Exception (233): No process is on the other end of the pipe.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 417
+   at WebApplication1.Db.GetUsers(String connectionString) in C:\dev\test\RecordTest\WebApplication1\Db.cs:line 21
+   at WebApplication1.Pages.DBTestModel.OnGetAsync() in C:\dev\test\RecordTest\WebApplication1\Pages\DBTest.cshtml.cs:line 26
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.NonGenericTaskHandlerMethod.Execute(Object receiver, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeHandlerMethodAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeNextPageFilterAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Rethrow(PageHandlerExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+ClientConnectionId:6e769e9c-f0ec-484e-9c58-20eaebc184d5
+Error Number:233,State:0,Class:20
+2021-01-16 14:56:01.430 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Data.SqlClient.SqlException (0x80131904): A connection was successfully established with the server, but then an error occurred during the login process. (provider: Named Pipes Provider, error: 0 - No process is on the other end of the pipe.)
+ ---> System.ComponentModel.Win32Exception (233): No process is on the other end of the pipe.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 417
+   at WebApplication1.Db.GetUsers(String connectionString) in C:\dev\test\RecordTest\WebApplication1\Db.cs:line 21
+   at WebApplication1.Pages.DBTestModel.OnGetAsync() in C:\dev\test\RecordTest\WebApplication1\Pages\DBTest.cshtml.cs:line 26
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.NonGenericTaskHandlerMethod.Execute(Object receiver, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeHandlerMethodAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeNextPageFilterAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Rethrow(PageHandlerExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ClientConnectionId:6e769e9c-f0ec-484e-9c58-20eaebc184d5
+Error Number:233,State:0,Class:20
+2021-01-16 14:57:43.066 +00:00 [INF] Starting up
+2021-01-16 14:57:43.328 +00:00 [INF] Now listening on: https://localhost:5001
+2021-01-16 14:57:43.331 +00:00 [INF] Now listening on: http://localhost:5000
+2021-01-16 14:57:43.332 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-01-16 14:57:43.332 +00:00 [INF] Hosting environment: Development
+2021-01-16 14:57:43.333 +00:00 [INF] Content root path: C:\dev\test\RecordTest\WebApplication1
+2021-01-16 14:57:43.789 +00:00 [INF] HTTP GET / responded 200 in 94.6960 ms
+2021-01-16 14:57:45.741 +00:00 [ERR] HTTP GET /DBTest responded 500 in 168.3951 ms
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'aspnet_Users'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 418
+   at WebApplication1.Db.GetUsers(String connectionString) in C:\dev\test\RecordTest\WebApplication1\Db.cs:line 21
+   at WebApplication1.Pages.DBTestModel.OnGetAsync() in C:\dev\test\RecordTest\WebApplication1\Pages\DBTest.cshtml.cs:line 26
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.NonGenericTaskHandlerMethod.Execute(Object receiver, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeHandlerMethodAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeNextPageFilterAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Rethrow(PageHandlerExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+ClientConnectionId:4ef24bab-ff93-4435-843d-d30179d7898c
+Error Number:208,State:1,Class:16
+2021-01-16 14:57:45.788 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'aspnet_Users'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 418
+   at WebApplication1.Db.GetUsers(String connectionString) in C:\dev\test\RecordTest\WebApplication1\Db.cs:line 21
+   at WebApplication1.Pages.DBTestModel.OnGetAsync() in C:\dev\test\RecordTest\WebApplication1\Pages\DBTest.cshtml.cs:line 26
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.ExecutorFactory.NonGenericTaskHandlerMethod.Execute(Object receiver, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeHandlerMethodAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeNextPageFilterAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Rethrow(PageHandlerExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ClientConnectionId:4ef24bab-ff93-4435-843d-d30179d7898c
+Error Number:208,State:1,Class:16
+2021-01-16 15:03:05.975 +00:00 [INF] Starting up
+2021-01-16 15:03:06.263 +00:00 [INF] Now listening on: https://localhost:5001
+2021-01-16 15:03:06.267 +00:00 [INF] Now listening on: http://localhost:5000
+2021-01-16 15:03:06.268 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-01-16 15:03:06.268 +00:00 [INF] Hosting environment: Development
+2021-01-16 15:03:06.269 +00:00 [INF] Content root path: C:\dev\test\RecordTest\WebApplication1
+2021-01-16 15:03:06.709 +00:00 [INF] HTTP GET / responded 200 in 93.7041 ms
+2021-01-16 15:03:09.929 +00:00 [INF] HTTP GET /DBTest responded 200 in 241.2483 ms
+2021-01-16 15:22:26.728 +00:00 [INF] Starting up
+2021-01-16 15:22:27.033 +00:00 [INF] Now listening on: https://localhost:5001
+2021-01-16 15:22:27.037 +00:00 [INF] Now listening on: http://localhost:5000
+2021-01-16 15:22:27.038 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-01-16 15:22:27.039 +00:00 [INF] Hosting environment: Development
+2021-01-16 15:22:27.039 +00:00 [INF] Content root path: C:\dev\test\RecordTest\WebApplication1
+2021-01-16 15:22:27.463 +00:00 [INF] HTTP GET / responded 200 in 95.2155 ms
+2021-01-16 15:22:29.570 +00:00 [INF] HTTP GET /DBTest responded 200 in 234.6279 ms
+2021-01-16 15:22:47.630 +00:00 [INF] Starting up
+2021-01-16 15:22:47.945 +00:00 [INF] Now listening on: https://localhost:5001
+2021-01-16 15:22:47.949 +00:00 [INF] Now listening on: http://localhost:5000
+2021-01-16 15:22:47.949 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-01-16 15:22:47.950 +00:00 [INF] Hosting environment: Development
+2021-01-16 15:22:47.951 +00:00 [INF] Content root path: C:\dev\test\RecordTest\WebApplication1
+2021-01-16 15:22:48.378 +00:00 [INF] HTTP GET / responded 200 in 95.5382 ms
+2021-01-16 15:22:50.244 +00:00 [INF] HTTP GET /DBTest responded 200 in 213.8831 ms
+2021-01-16 15:23:05.178 +00:00 [INF] Application is shutting down...
+2021-01-16 15:24:26.156 +00:00 [INF] Starting up
+2021-01-16 15:24:27.294 +00:00 [INF] Now listening on: https://localhost:5001
+2021-01-16 15:24:27.298 +00:00 [INF] Now listening on: http://localhost:5000
+2021-01-16 15:24:27.299 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-01-16 15:24:27.299 +00:00 [INF] Hosting environment: Development
+2021-01-16 15:24:27.300 +00:00 [INF] Content root path: C:\dev\test\RecordTest\WebApplication1
+2021-01-16 15:24:28.325 +00:00 [INF] HTTP GET / responded 200 in 170.4181 ms
+2021-01-16 15:24:36.593 +00:00 [INF] HTTP GET /DBTest responded 200 in 5906.6483 ms
+2021-01-16 15:25:23.351 +00:00 [INF] Starting up
+2021-01-16 15:25:24.537 +00:00 [INF] Now listening on: https://localhost:5001
+2021-01-16 15:25:24.540 +00:00 [INF] Now listening on: http://localhost:5000
+2021-01-16 15:25:24.541 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-01-16 15:25:24.542 +00:00 [INF] Hosting environment: Development
+2021-01-16 15:25:24.543 +00:00 [INF] Content root path: C:\dev\test\RecordTest\WebApplication1
+2021-01-16 15:25:25.443 +00:00 [INF] HTTP GET / responded 200 in 144.1391 ms
+2021-01-16 15:25:27.066 +00:00 [INF] HTTP GET /DBTest responded 200 in 281.0985 ms
+2021-01-16 15:25:31.739 +00:00 [INF] HTTP GET /DBTest responded 200 in 35.0556 ms
+2021-01-16 15:25:53.599 +00:00 [INF] Starting up
+2021-01-16 15:25:54.783 +00:00 [INF] Now listening on: https://localhost:5001
+2021-01-16 15:25:54.787 +00:00 [INF] Now listening on: http://localhost:5000
+2021-01-16 15:25:54.787 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-01-16 15:25:54.788 +00:00 [INF] Hosting environment: Development
+2021-01-16 15:25:54.789 +00:00 [INF] Content root path: C:\dev\test\RecordTest\WebApplication1
+2021-01-16 15:25:55.211 +00:00 [INF] Application is shutting down...
+2021-01-16 15:26:36.723 +00:00 [INF] Starting up
+2021-01-16 15:26:37.869 +00:00 [INF] Now listening on: https://localhost:5001
+2021-01-16 15:26:37.873 +00:00 [INF] Now listening on: http://localhost:5000
+2021-01-16 15:26:37.873 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-01-16 15:26:37.874 +00:00 [INF] Hosting environment: Development
+2021-01-16 15:26:37.875 +00:00 [INF] Content root path: C:\dev\test\RecordTest\WebApplication1
+2021-01-16 15:26:38.842 +00:00 [INF] HTTP GET / responded 200 in 164.0276 ms
+2021-01-16 15:27:17.705 +00:00 [INF] HTTP GET / responded 200 in 39.5272 ms
+2021-01-16 15:27:22.283 +00:00 [INF] HTTP GET /DBTest responded 200 in 42034.5881 ms
+2021-01-16 15:27:22.283 +00:00 [INF] HTTP GET /DBTest responded 200 in 4582.8838 ms
+2021-01-16 15:27:45.228 +00:00 [INF] Starting up
+2021-01-16 15:27:46.401 +00:00 [INF] Now listening on: https://localhost:5001
+2021-01-16 15:27:46.404 +00:00 [INF] Now listening on: http://localhost:5000
+2021-01-16 15:27:46.405 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-01-16 15:27:46.406 +00:00 [INF] Hosting environment: Development
+2021-01-16 15:27:46.406 +00:00 [INF] Content root path: C:\dev\test\RecordTest\WebApplication1
+2021-01-16 15:27:47.431 +00:00 [INF] HTTP GET / responded 200 in 161.8034 ms
+2021-01-16 15:27:59.791 +00:00 [INF] HTTP GET /DBTest responded 200 in 10219.6281 ms
+2021-01-16 15:29:22.660 +00:00 [INF] Starting up
+2021-01-16 15:29:22.965 +00:00 [INF] Now listening on: https://localhost:5001
+2021-01-16 15:29:22.969 +00:00 [INF] Now listening on: http://localhost:5000
+2021-01-16 15:29:22.969 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-01-16 15:29:22.970 +00:00 [INF] Hosting environment: Development
+2021-01-16 15:29:22.971 +00:00 [INF] Content root path: C:\dev\test\RecordTest\WebApplication1
+2021-01-16 15:29:23.400 +00:00 [INF] HTTP GET / responded 200 in 94.6178 ms
+2021-01-16 15:29:25.305 +00:00 [INF] HTTP GET /DBTest responded 200 in 238.7672 ms
+2021-01-16 15:29:27.483 +00:00 [INF] HTTP GET /DBTest responded 200 in 40.9939 ms
+2021-01-16 15:29:28.075 +00:00 [INF] HTTP GET /DBTest responded 200 in 34.2414 ms
+2021-01-16 15:29:28.634 +00:00 [INF] HTTP GET /DBTest responded 200 in 34.4545 ms
+2021-01-16 15:29:29.186 +00:00 [INF] HTTP GET /DBTest responded 200 in 34.5570 ms
+2021-01-16 15:29:29.521 +00:00 [INF] HTTP GET /DBTest responded 200 in 33.4866 ms
+2021-01-16 15:29:31.297 +00:00 [INF] HTTP GET / responded 200 in 0.7217 ms
+2021-01-16 15:29:33.043 +00:00 [INF] Application is shutting down...
+2021-01-16 15:29:52.962 +00:00 [INF] Starting up
+2021-01-16 15:29:53.264 +00:00 [INF] Now listening on: https://localhost:5001
+2021-01-16 15:29:53.272 +00:00 [INF] Now listening on: http://localhost:5000
+2021-01-16 15:29:53.274 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-01-16 15:29:53.275 +00:00 [INF] Hosting environment: Development
+2021-01-16 15:29:53.277 +00:00 [INF] Content root path: C:\dev\test\RecordTest\WebApplication1
+2021-01-16 15:29:53.681 +00:00 [INF] HTTP GET / responded 200 in 91.5616 ms
+2021-01-16 15:29:55.456 +00:00 [INF] HTTP GET /DBTest responded 200 in 232.4543 ms
+2021-01-16 15:29:56.997 +00:00 [INF] HTTP GET / responded 200 in 1.2955 ms
+2021-01-16 15:29:57.676 +00:00 [INF] HTTP GET /DBTest responded 200 in 39.8375 ms
+2021-01-16 15:29:58.241 +00:00 [INF] HTTP GET /DBTest responded 200 in 35.4578 ms
+2021-01-16 15:29:58.959 +00:00 [INF] HTTP GET /DBTest responded 200 in 34.9610 ms
+2021-01-16 15:30:00.988 +00:00 [INF] Application is shutting down...
+2021-01-16 15:30:34.660 +00:00 [INF] Starting up
+2021-01-16 15:30:34.972 +00:00 [INF] Now listening on: https://localhost:5001
+2021-01-16 15:30:34.976 +00:00 [INF] Now listening on: http://localhost:5000
+2021-01-16 15:30:34.977 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-01-16 15:30:34.977 +00:00 [INF] Hosting environment: Development
+2021-01-16 15:30:34.978 +00:00 [INF] Content root path: C:\dev\test\RecordTest\WebApplication1
+2021-01-16 15:30:35.408 +00:00 [INF] HTTP GET / responded 200 in 93.7762 ms
+2021-01-16 15:30:37.780 +00:00 [INF] HTTP GET /DBTest responded 200 in 247.4204 ms
+2021-01-16 15:30:38.499 +00:00 [INF] HTTP GET /DBTest responded 200 in 38.5328 ms
+2021-01-16 15:30:39.317 +00:00 [INF] HTTP GET /DBTest responded 200 in 33.0920 ms
+2021-01-16 15:30:39.805 +00:00 [INF] HTTP GET /DBTest responded 200 in 32.4503 ms
+2021-01-16 15:30:40.244 +00:00 [INF] HTTP GET /DBTest responded 200 in 34.5524 ms
+2021-01-16 15:30:40.628 +00:00 [INF] HTTP GET /DBTest responded 200 in 35.0379 ms
+2021-01-16 15:30:42.429 +00:00 [INF] Application is shutting down...
+2021-01-16 15:35:31.054 +00:00 [INF] Starting up
+2021-01-16 15:35:31.348 +00:00 [INF] Now listening on: https://localhost:5001
+2021-01-16 15:35:31.352 +00:00 [INF] Now listening on: http://localhost:5000
+2021-01-16 15:35:31.353 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-01-16 15:35:31.353 +00:00 [INF] Hosting environment: Development
+2021-01-16 15:35:31.354 +00:00 [INF] Content root path: C:\dev\test\RecordTest\WebApplication1
+2021-01-16 15:35:31.767 +00:00 [INF] HTTP GET / responded 200 in 93.3819 ms
+2021-01-16 15:35:34.318 +00:00 [INF] HTTP GET /DBTest responded 200 in 242.9249 ms
+2021-01-16 15:35:35.526 +00:00 [INF] HTTP GET /DBTest responded 200 in 40.3190 ms
+2021-01-16 15:35:36.222 +00:00 [INF] HTTP GET /DBTest responded 200 in 34.8364 ms
+2021-01-16 15:35:36.796 +00:00 [INF] HTTP GET /DBTest responded 200 in 33.1939 ms
+2021-01-16 15:35:37.381 +00:00 [INF] HTTP GET /DBTest responded 200 in 34.6317 ms
+2021-01-16 15:35:37.704 +00:00 [INF] HTTP GET /DBTest responded 200 in 31.6325 ms
+2021-01-16 15:35:38.356 +00:00 [INF] HTTP GET /DBTest responded 200 in 32.4803 ms
+2021-01-16 15:35:38.744 +00:00 [INF] HTTP GET /DBTest responded 200 in 33.1492 ms
+2021-01-16 15:35:39.358 +00:00 [INF] HTTP GET / responded 200 in 0.7235 ms
+2021-01-16 15:35:40.003 +00:00 [INF] HTTP GET /DBTest responded 200 in 33.2312 ms
+2021-01-16 15:35:42.061 +00:00 [INF] Application is shutting down...
+2021-01-16 15:35:50.779 +00:00 [INF] Starting up
+2021-01-16 15:35:51.916 +00:00 [INF] Now listening on: https://localhost:5001
+2021-01-16 15:35:51.919 +00:00 [INF] Now listening on: http://localhost:5000
+2021-01-16 15:35:51.920 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-01-16 15:35:51.921 +00:00 [INF] Hosting environment: Development
+2021-01-16 15:35:51.921 +00:00 [INF] Content root path: C:\dev\test\RecordTest\WebApplication1
+2021-01-16 15:35:52.990 +00:00 [INF] HTTP GET / responded 200 in 163.5311 ms
+2021-01-16 15:37:35.650 +00:00 [INF] Starting up
+2021-01-16 15:37:35.938 +00:00 [INF] Now listening on: https://localhost:5001
+2021-01-16 15:37:35.941 +00:00 [INF] Now listening on: http://localhost:5000
+2021-01-16 15:37:35.942 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-01-16 15:37:35.943 +00:00 [INF] Hosting environment: Development
+2021-01-16 15:37:35.943 +00:00 [INF] Content root path: C:\dev\test\RecordTest\WebApplication1
+2021-01-16 15:37:36.365 +00:00 [INF] HTTP GET / responded 200 in 92.9707 ms
+2021-01-16 15:37:39.299 +00:00 [INF] actor
+2021-01-16 15:37:39.301 +00:00 [INF] actor
+2021-01-16 15:37:39.302 +00:00 [INF] actor
+2021-01-16 15:37:39.303 +00:00 [INF] actor
+2021-01-16 15:37:39.303 +00:00 [INF] actor
+2021-01-16 15:37:39.304 +00:00 [INF] actor
+2021-01-16 15:37:39.304 +00:00 [INF] actor
+2021-01-16 15:37:39.305 +00:00 [INF] actor
+2021-01-16 15:37:39.306 +00:00 [INF] actor
+2021-01-16 15:37:39.306 +00:00 [INF] actor
+2021-01-16 15:37:39.307 +00:00 [INF] actor
+2021-01-16 15:37:39.307 +00:00 [INF] actor
+2021-01-16 15:37:39.308 +00:00 [INF] actor
+2021-01-16 15:37:39.309 +00:00 [INF] actor
+2021-01-16 15:37:39.309 +00:00 [INF] actor
+2021-01-16 15:37:39.310 +00:00 [INF] actor
+2021-01-16 15:37:39.310 +00:00 [INF] actor
+2021-01-16 15:37:39.311 +00:00 [INF] actor
+2021-01-16 15:37:39.312 +00:00 [INF] actor
+2021-01-16 15:37:39.312 +00:00 [INF] actor
+2021-01-16 15:37:39.313 +00:00 [INF] actor
+2021-01-16 15:37:39.314 +00:00 [INF] actor
+2021-01-16 15:37:39.315 +00:00 [INF] actor
+2021-01-16 15:37:39.315 +00:00 [INF] actor
+2021-01-16 15:37:39.316 +00:00 [INF] actor
+2021-01-16 15:37:39.317 +00:00 [INF] actor
+2021-01-16 15:37:39.320 +00:00 [INF] actor
+2021-01-16 15:37:39.321 +00:00 [INF] actor
+2021-01-16 15:37:39.322 +00:00 [INF] actor
+2021-01-16 15:37:39.323 +00:00 [INF] actor
+2021-01-16 15:37:39.324 +00:00 [INF] actor
+2021-01-16 15:37:39.325 +00:00 [INF] actor
+2021-01-16 15:37:39.326 +00:00 [INF] actor
+2021-01-16 15:37:39.326 +00:00 [INF] actor
+2021-01-16 15:37:39.327 +00:00 [INF] actor
+2021-01-16 15:37:39.328 +00:00 [INF] actor
+2021-01-16 15:37:39.329 +00:00 [INF] actor
+2021-01-16 15:37:39.330 +00:00 [INF] actor
+2021-01-16 15:37:39.331 +00:00 [INF] actor
+2021-01-16 15:37:39.331 +00:00 [INF] actor
+2021-01-16 15:37:39.332 +00:00 [INF] actor
+2021-01-16 15:37:39.333 +00:00 [INF] actor
+2021-01-16 15:37:39.336 +00:00 [INF] actor
+2021-01-16 15:37:39.336 +00:00 [INF] actor
+2021-01-16 15:37:39.337 +00:00 [INF] actor
+2021-01-16 15:37:39.338 +00:00 [INF] actor
+2021-01-16 15:37:39.339 +00:00 [INF] actor
+2021-01-16 15:37:39.340 +00:00 [INF] actor
+2021-01-16 15:37:39.341 +00:00 [INF] actor
+2021-01-16 15:37:39.341 +00:00 [INF] actor
+2021-01-16 15:37:39.403 +00:00 [INF] HTTP GET /DBTest responded 200 in 275.2283 ms
+2021-01-16 15:37:43.573 +00:00 [INF] Application is shutting down...
+2021-01-16 15:38:04.531 +00:00 [INF] Starting up
+2021-01-16 15:38:04.821 +00:00 [INF] Now listening on: https://localhost:5001
+2021-01-16 15:38:04.824 +00:00 [INF] Now listening on: http://localhost:5000
+2021-01-16 15:38:04.825 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-01-16 15:38:04.826 +00:00 [INF] Hosting environment: Development
+2021-01-16 15:38:04.827 +00:00 [INF] Content root path: C:\dev\test\RecordTest\WebApplication1
+2021-01-16 15:38:05.246 +00:00 [INF] HTTP GET / responded 200 in 91.4938 ms
+2021-01-16 15:38:07.889 +00:00 [INF] Actor { ActorID = 4, Name = $hort, Too, Sex = M }
+2021-01-16 15:38:07.891 +00:00 [INF] Actor { ActorID = 16, Name = 'Bear'Boyd, Steven, Sex = M }
+2021-01-16 15:38:07.892 +00:00 [INF] Actor { ActorID = 28, Name = 'Dead End' Kids, The, Sex = M }
+2021-01-16 15:38:07.893 +00:00 [INF] Actor { ActorID = 566, Name = Aaby, Kristian, Sex = M }
+2021-01-16 15:38:07.894 +00:00 [INF] Actor { ActorID = 580, Name = , Sex = M }
+2021-01-16 15:38:07.895 +00:00 [INF] Actor { ActorID = 636, Name = Aaker, Lee, Sex = M }
+2021-01-16 15:38:07.896 +00:00 [INF] Actor { ActorID = 769, Name = Aamodt, Thor Michael, Sex = M }
+2021-01-16 15:38:07.897 +00:00 [INF] Actor { ActorID = 797, Name = Aar, Jim, Sex = M }
+2021-01-16 15:38:07.897 +00:00 [INF] Actor { ActorID = 802, Name = Aaran, Abraxas, Sex = M }
+2021-01-16 15:38:07.898 +00:00 [INF] Actor { ActorID = 808, Name = Aard, Frank J., Sex = M }
+2021-01-16 15:38:07.899 +00:00 [INF] Actor { ActorID = 817, Name = Aardvark Bragpuss, Fritz, Sex = M }
+2021-01-16 15:38:07.900 +00:00 [INF] Actor { ActorID = 851, Name = Aarniokoski, Douglas, Sex = M }
+2021-01-16 15:38:07.901 +00:00 [INF] Actor { ActorID = 888, Name = Aaron, Bob (I), Sex = M }
+2021-01-16 15:38:07.901 +00:00 [INF] Actor { ActorID = 894, Name = Aaron, Chad (I), Sex = M }
+2021-01-16 15:38:07.902 +00:00 [INF] Actor { ActorID = 923, Name = Aaron, James (I), Sex = M }
+2021-01-16 15:38:07.903 +00:00 [INF] Actor { ActorID = 962, Name = Aaron, Sam (I), Sex = M }
+2021-01-16 15:38:07.904 +00:00 [INF] Actor { ActorID = 978, Name = Aaron, Victor (I), Sex = M }
+2021-01-16 15:38:07.905 +00:00 [INF] Actor { ActorID = 989, Name = Aarons, Allan, Sex = M }
+2021-01-16 15:38:07.906 +00:00 [INF] Actor { ActorID = 1143, Name = Aasland, Derek, Sex = M }
+2021-01-16 15:38:07.908 +00:00 [INF] Actor { ActorID = 1276, Name = Abadal, Ignasi, Sex = M }
+2021-01-16 15:38:07.909 +00:00 [INF] Actor { ActorID = 1304, Name = Abadia, Oscar, Sex = M }
+2021-01-16 15:38:07.910 +00:00 [INF] Actor { ActorID = 1348, Name = Abadía, Julio, Sex = M }
+2021-01-16 15:38:07.911 +00:00 [INF] Actor { ActorID = 1391, Name = Abakaz, Suvit, Sex = M }
+2021-01-16 15:38:07.912 +00:00 [INF] Actor { ActorID = 1517, Name = Abascal, Paul, Sex = M }
+2021-01-16 15:38:07.913 +00:00 [INF] Actor { ActorID = 1535, Name = Abasolo, Roland T., Sex = M }
+2021-01-16 15:38:07.914 +00:00 [INF] Actor { ActorID = 1554, Name = Abatantuono, Diego, Sex = M }
+2021-01-16 15:38:07.915 +00:00 [INF] Actor { ActorID = 1556, Name = Abatcha, Saïdou, Sex = M }
+2021-01-16 15:38:07.916 +00:00 [INF] Actor { ActorID = 1583, Name = Abatemarco, Tony, Sex = M }
+2021-01-16 15:38:07.917 +00:00 [INF] Actor { ActorID = 1588, Name = Abatiell, Robert, Sex = M }
+2021-01-16 15:38:07.918 +00:00 [INF] Actor { ActorID = 1595, Name = Abattucci, Serge, Sex = M }
+2021-01-16 15:38:07.919 +00:00 [INF] Actor { ActorID = 1710, Name = Abbas, Abdullah, Sex = M }
+2021-01-16 15:38:07.920 +00:00 [INF] Actor { ActorID = 1805, Name = Abbasi, Riz, Sex = M }
+2021-01-16 15:38:07.921 +00:00 [INF] Actor { ActorID = 1923, Name = Abbey, Ian, Sex = M }
+2021-01-16 15:38:07.922 +00:00 [INF] Actor { ActorID = 1927, Name = Abbey, John, Sex = M }
+2021-01-16 15:38:07.924 +00:00 [INF] Actor { ActorID = 1929, Name = Abbey, Joshua, Sex = M }
+2021-01-16 15:38:07.926 +00:00 [INF] Actor { ActorID = 1930, Name = Abbey, Leo, Sex = M }
+2021-01-16 15:38:07.928 +00:00 [INF] Actor { ActorID = 1982, Name = Abbot, Bernie, Sex = M }
+2021-01-16 15:38:07.929 +00:00 [INF] Actor { ActorID = 1993, Name = Abbot, Jerry, Sex = M }
+2021-01-16 15:38:07.930 +00:00 [INF] Actor { ActorID = 2000, Name = Abbot, Paul, Sex = M }
+2021-01-16 15:38:07.931 +00:00 [INF] Actor { ActorID = 2007, Name = Abbot, Tommy, Sex = M }
+2021-01-16 15:38:07.932 +00:00 [INF] Actor { ActorID = 2036, Name = Abbott, Bruce (I), Sex = M }
+2021-01-16 15:38:07.933 +00:00 [INF] Actor { ActorID = 2039, Name = Abbott, Bud, Sex = M }
+2021-01-16 15:38:07.934 +00:00 [INF] Actor { ActorID = 2060, Name = Abbott, Dalton, Sex = M }
+2021-01-16 15:38:07.935 +00:00 [INF] Actor { ActorID = 2065, Name = Abbott, David (I), Sex = M }
+2021-01-16 15:38:07.936 +00:00 [INF] Actor { ActorID = 2085, Name = Abbott, Frankie, Sex = M }
+2021-01-16 15:38:07.937 +00:00 [INF] Actor { ActorID = 2117, Name = Abbott, Jamie (I), Sex = M }
+2021-01-16 15:38:07.938 +00:00 [INF] Actor { ActorID = 2131, Name = Abbott, John (I), Sex = M }
+2021-01-16 15:38:07.940 +00:00 [INF] Actor { ActorID = 2132, Name = Abbott, John (II), Sex = M }
+2021-01-16 15:38:07.941 +00:00 [INF] Actor { ActorID = 2154, Name = Abbott, Mark (I), Sex = M }
+2021-01-16 15:38:07.942 +00:00 [INF] Actor { ActorID = 2177, Name = Abbott, Paul (I), Sex = M }
+2021-01-16 15:38:08.007 +00:00 [INF] HTTP GET /DBTest responded 200 in 299.8271 ms
+2021-01-16 15:38:31.171 +00:00 [INF] Application is shutting down...
