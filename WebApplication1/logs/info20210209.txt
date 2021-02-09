@@ -287,3 +287,144 @@ System.InvalidOperationException: Record type 'WebApplication1.Pages.LoginModelN
    at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
 2021-02-09 14:58:47.130 +00:00 [INF] Application is shutting down...
+2021-02-09 17:23:57.377 +00:00 [INF] Starting up
+2021-02-09 17:23:57.686 +00:00 [INF] Now listening on: https://localhost:5001
+2021-02-09 17:23:57.689 +00:00 [INF] Now listening on: http://localhost:5000
+2021-02-09 17:23:57.690 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-02-09 17:23:57.691 +00:00 [INF] Hosting environment: Development
+2021-02-09 17:23:57.692 +00:00 [INF] Content root path: C:\dev\test\record-test\WebApplication1
+2021-02-09 17:23:58.093 +00:00 [INF] HTTP GET / responded 200 in 99.2279 ms
+2021-02-09 17:23:59.752 +00:00 [INF] HTTP GET /LoginNRTB responded 200 in 62.3342 ms
+2021-02-09 17:24:00.746 +00:00 [ERR] HTTP POST /LoginNRTB responded 500 in 14.1816 ms
+System.InvalidOperationException: Record type 'WebApplication1.Pages.LoginModelNRTB+InputModel' has validation metadata defined on property 'PasswordB' that will be ignored. 'PasswordB' is a parameter in the record primary constructor and validation metadata must be associated with the constructor parameter.
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata.ThrowIfRecordTypeHasValidationOnProperties()
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.DefaultComplexObjectValidationStrategy.Enumerator..ctor(ModelMetadata modelMetadata, String key, Object model)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.DefaultComplexObjectValidationStrategy.GetChildren(ModelMetadata metadata, String key, Object model)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.VisitChildren(IValidationStrategy strategy)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.VisitComplexType(IValidationStrategy defaultStrategy)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.VisitImplementation(ModelMetadata& metadata, String& key, Object model)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.Visit(ModelMetadata metadata, String key, Object model)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.Validate(ModelMetadata metadata, String key, Object model, Boolean alwaysValidateAtTopLevel, Object container)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ObjectModelValidator.Validate(ActionContext actionContext, ValidationStateDictionary validationState, String prefix, Object model, ModelMetadata metadata, Object container)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.EnforceBindRequiredAndValidate(ObjectModelValidator baseObjectValidator, ActionContext actionContext, ParameterDescriptor parameter, ModelMetadata metadata, ModelBindingContext modelBindingContext, ModelBindingResult modelBindingResult, Object container)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.BindModelAsync(ActionContext actionContext, IModelBinder modelBinder, IValueProvider valueProvider, ParameterDescriptor parameter, ModelMetadata metadata, Object value, Object container)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageBinderFactory.<>c__DisplayClass2_0.<<CreatePropertyBinder>g__Bind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.BindArgumentsCoreAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2021-02-09 17:24:00.781 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Record type 'WebApplication1.Pages.LoginModelNRTB+InputModel' has validation metadata defined on property 'PasswordB' that will be ignored. 'PasswordB' is a parameter in the record primary constructor and validation metadata must be associated with the constructor parameter.
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata.ThrowIfRecordTypeHasValidationOnProperties()
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.DefaultComplexObjectValidationStrategy.Enumerator..ctor(ModelMetadata modelMetadata, String key, Object model)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.DefaultComplexObjectValidationStrategy.GetChildren(ModelMetadata metadata, String key, Object model)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.VisitChildren(IValidationStrategy strategy)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.VisitComplexType(IValidationStrategy defaultStrategy)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.VisitImplementation(ModelMetadata& metadata, String& key, Object model)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.Visit(ModelMetadata metadata, String key, Object model)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.Validate(ModelMetadata metadata, String key, Object model, Boolean alwaysValidateAtTopLevel, Object container)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ObjectModelValidator.Validate(ActionContext actionContext, ValidationStateDictionary validationState, String prefix, Object model, ModelMetadata metadata, Object container)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.EnforceBindRequiredAndValidate(ObjectModelValidator baseObjectValidator, ActionContext actionContext, ParameterDescriptor parameter, ModelMetadata metadata, ModelBindingContext modelBindingContext, ModelBindingResult modelBindingResult, Object container)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.BindModelAsync(ActionContext actionContext, IModelBinder modelBinder, IValueProvider valueProvider, ParameterDescriptor parameter, ModelMetadata metadata, Object value, Object container)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageBinderFactory.<>c__DisplayClass2_0.<<CreatePropertyBinder>g__Bind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.BindArgumentsCoreAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-02-09 17:30:46.201 +00:00 [INF] Starting up
+2021-02-09 17:30:46.534 +00:00 [INF] Now listening on: https://localhost:5001
+2021-02-09 17:30:46.538 +00:00 [INF] Now listening on: http://localhost:5000
+2021-02-09 17:30:46.539 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-02-09 17:30:46.539 +00:00 [INF] Hosting environment: Development
+2021-02-09 17:30:46.540 +00:00 [INF] Content root path: C:\dev\test\record-test\WebApplication1
+2021-02-09 17:30:46.923 +00:00 [INF] HTTP GET / responded 200 in 92.2006 ms
+2021-02-09 17:30:48.979 +00:00 [INF] HTTP GET /LoginNRTB responded 200 in 61.1203 ms
+2021-02-09 17:30:50.115 +00:00 [INF] Success! InputModel { Email = tier1@contoso.com, PasswordB = 1, RememberMe = True }
+2021-02-09 17:30:50.116 +00:00 [INF] HTTP POST /LoginNRTB responded 302 in 19.0189 ms
+2021-02-09 17:30:50.122 +00:00 [INF] HTTP GET / responded 200 in 0.7328 ms
+2021-02-09 17:31:49.331 +00:00 [INF] Starting up
+2021-02-09 17:31:49.634 +00:00 [INF] Now listening on: https://localhost:5001
+2021-02-09 17:31:49.638 +00:00 [INF] Now listening on: http://localhost:5000
+2021-02-09 17:31:49.639 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-02-09 17:31:49.639 +00:00 [INF] Hosting environment: Development
+2021-02-09 17:31:49.640 +00:00 [INF] Content root path: C:\dev\test\record-test\WebApplication1
+2021-02-09 17:31:50.050 +00:00 [INF] HTTP GET / responded 200 in 95.2318 ms
+2021-02-09 17:31:51.623 +00:00 [INF] HTTP GET /LoginNRTB responded 200 in 63.0848 ms
+2021-02-09 17:31:52.764 +00:00 [ERR] HTTP POST /LoginNRTB responded 500 in 9.1818 ms
+System.InvalidOperationException: Could not create an instance of type 'WebApplication1.Pages.LoginModelNRTB+InputModel'. Model bound complex types must not be abstract or value types and must have a parameterless constructor. Record types must have a single primary constructor. Alternatively, set the 'Input' property to a non-null value in the 'WebApplication1.Pages.LoginModelNRTB' constructor.
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinder.CreateModel(ModelBindingContext bindingContext)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinder.BindModelCoreAsync(ModelBindingContext bindingContext, Int32 propertyData)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.BindModelAsync(ActionContext actionContext, IModelBinder modelBinder, IValueProvider valueProvider, ParameterDescriptor parameter, ModelMetadata metadata, Object value, Object container)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageBinderFactory.<>c__DisplayClass2_0.<<CreatePropertyBinder>g__Bind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.BindArgumentsCoreAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2021-02-09 17:31:52.792 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Could not create an instance of type 'WebApplication1.Pages.LoginModelNRTB+InputModel'. Model bound complex types must not be abstract or value types and must have a parameterless constructor. Record types must have a single primary constructor. Alternatively, set the 'Input' property to a non-null value in the 'WebApplication1.Pages.LoginModelNRTB' constructor.
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinder.CreateModel(ModelBindingContext bindingContext)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinder.BindModelCoreAsync(ModelBindingContext bindingContext, Int32 propertyData)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.BindModelAsync(ActionContext actionContext, IModelBinder modelBinder, IValueProvider valueProvider, ParameterDescriptor parameter, ModelMetadata metadata, Object value, Object container)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageBinderFactory.<>c__DisplayClass2_0.<<CreatePropertyBinder>g__Bind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.BindArgumentsCoreAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-02-09 17:32:27.560 +00:00 [INF] Starting up
+2021-02-09 17:32:27.845 +00:00 [INF] Now listening on: https://localhost:5001
+2021-02-09 17:32:27.848 +00:00 [INF] Now listening on: http://localhost:5000
+2021-02-09 17:32:27.849 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-02-09 17:32:27.849 +00:00 [INF] Hosting environment: Development
+2021-02-09 17:32:27.850 +00:00 [INF] Content root path: C:\dev\test\record-test\WebApplication1
+2021-02-09 17:32:28.301 +00:00 [INF] HTTP GET / responded 200 in 92.3887 ms
+2021-02-09 17:32:30.062 +00:00 [INF] HTTP GET /LoginNRTB responded 200 in 64.4327 ms
+2021-02-09 17:32:31.058 +00:00 [INF] Success! InputModel { Email = tier1@contoso.com, PasswordB = 1, RememberMe = True }
+2021-02-09 17:32:31.060 +00:00 [INF] HTTP POST /LoginNRTB responded 302 in 18.2723 ms
+2021-02-09 17:32:31.066 +00:00 [INF] HTTP GET / responded 200 in 0.7082 ms
+2021-02-09 17:32:32.559 +00:00 [INF] HTTP GET /LoginNRTB responded 200 in 2.1772 ms
+2021-02-09 17:33:24.274 +00:00 [INF] Starting up
+2021-02-09 17:33:24.568 +00:00 [INF] Now listening on: https://localhost:5001
+2021-02-09 17:33:24.572 +00:00 [INF] Now listening on: http://localhost:5000
+2021-02-09 17:33:24.573 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-02-09 17:33:24.573 +00:00 [INF] Hosting environment: Development
+2021-02-09 17:33:24.574 +00:00 [INF] Content root path: C:\dev\test\record-test\WebApplication1
+2021-02-09 17:33:25.018 +00:00 [INF] HTTP GET / responded 200 in 100.1193 ms
+2021-02-09 17:33:26.372 +00:00 [INF] HTTP GET /LoginNRTB responded 200 in 55.5848 ms
+2021-02-09 17:33:27.494 +00:00 [INF] Success! InputModel { Email = tier1@contoso.com, PasswordB = 1, RememberMe = True }
+2021-02-09 17:33:27.496 +00:00 [INF] HTTP POST /LoginNRTB responded 302 in 37.8001 ms
+2021-02-09 17:33:27.501 +00:00 [INF] HTTP GET / responded 200 in 0.6474 ms
+2021-02-09 17:34:37.235 +00:00 [INF] Application is shutting down...
