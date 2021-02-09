@@ -10,7 +10,7 @@ namespace WebApplication1.Pages
     // with inbound form post
     // https://github.com/dotnet/aspnetcore/issues/22656
     // Scaffolding code for login needs more work from the team
-    // nullable ref types more useful to us for own custom code
+    // looks good for .NET6 https://github.com/dotnet/aspnetcore/milestone/122
 
     public class LoginModelNRT : PageModel
     {
@@ -20,7 +20,7 @@ namespace WebApplication1.Pages
         // https://stackoverflow.com/a/54973095/26086
         // so this will get rid of the warnings as we are happy we will never get dereferences on the front
         // ie we are happy the underlying framework will not produce null reference exceptions
-        public InputModel Input { get; set; } = default!;
+        public InputModel Input { get; set; } = null!;
         // there may not be a return url
         //public string? ReturnUrl { get; set; }
 

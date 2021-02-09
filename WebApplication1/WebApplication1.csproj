@@ -2,16 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
-    <!--<nullable>enable</nullable>-->
+    <nullable>enable</nullable>
   </PropertyGroup>
-
-  <ItemGroup>
-    <Compile Remove="Pages\LoginNRT.cshtml.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Remove="Pages\LoginNRT.cshtml" />
-  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Dapper" Version="2.0.78" />

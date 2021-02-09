@@ -5,9 +5,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 
 namespace WebApplication1.Pages
 {
+    [Authorize]
     public class PrivacyModel : PageModel
     {
         private readonly ILogger<PrivacyModel> _logger;

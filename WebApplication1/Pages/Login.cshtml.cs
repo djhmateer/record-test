@@ -1,5 +1,4 @@
 using System.ComponentModel.DataAnnotations;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Serilog;
@@ -35,6 +34,7 @@ namespace WebApplication1.Pages
         {
             Log.Information(returnUrl);
             // not sure when ErrorMessage is used
+            // maybe when a
             //if (!string.IsNullOrEmpty(ErrorMessage))
             //{
             //    ModelState.AddModelError(string.Empty, ErrorMessage);
