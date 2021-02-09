@@ -52,8 +52,8 @@ public class LoginModelNRTB : PageModel
     // 3. Positional record attributes not being picked up
     public record InputModel(
         string Email,
-        [DataType(DataType.Password)] string PasswordB,
-        [Display(Name = "Remember me?")] bool RememberMe);
+        [property:DataType(DataType.Password)] string PasswordB,
+        [property:Display(Name = "Remember me?")] bool RememberMe);
 
 
     public void OnGet() { }

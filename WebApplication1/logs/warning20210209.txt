@@ -1,83 +1,3 @@
-2021-02-09 08:36:23.296 +00:00 [INF] Starting up
-2021-02-09 08:36:24.365 +00:00 [INF] Application started. Press Ctrl+C to shut down.
-2021-02-09 08:36:24.369 +00:00 [INF] Hosting environment: Development
-2021-02-09 08:36:24.371 +00:00 [INF] Content root path: C:\dev\test\record-test\WebApplication1
-2021-02-09 08:36:24.776 +00:00 [INF] HTTP GET / responded 200 in 280.3241 ms
-2021-02-09 08:36:30.143 +00:00 [INF] HTTP GET /LoginNRT responded 200 in 111.1400 ms
-2021-02-09 08:36:35.686 +00:00 [INF] HTTP GET /Login responded 200 in 37.2136 ms
-2021-02-09 08:36:38.672 +00:00 [INF] HTTP GET / responded 200 in 1.5198 ms
-2021-02-09 08:36:40.478 +00:00 [INF] HTTP GET /Login responded 200 in 2.6265 ms
-2021-02-09 08:36:42.450 +00:00 [INF] HTTP GET /LoginNRT responded 200 in 2.3635 ms
-2021-02-09 13:57:35.151 +00:00 [INF] Starting up
-2021-02-09 13:57:35.571 +00:00 [INF] Now listening on: https://localhost:5001
-2021-02-09 13:57:35.574 +00:00 [INF] Now listening on: http://localhost:5000
-2021-02-09 13:57:35.575 +00:00 [INF] Application started. Press Ctrl+C to shut down.
-2021-02-09 13:57:35.576 +00:00 [INF] Hosting environment: Development
-2021-02-09 13:57:35.576 +00:00 [INF] Content root path: C:\dev\test\record-test\WebApplication1
-2021-02-09 13:57:36.330 +00:00 [INF] HTTP GET / responded 200 in 110.0234 ms
-2021-02-09 13:57:37.917 +00:00 [INF] HTTP GET /LoginNRT responded 200 in 69.7295 ms
-2021-02-09 13:57:39.426 +00:00 [INF] WebApplication1.Pages.LoginModelNRT+InputModel
-2021-02-09 13:57:39.427 +00:00 [INF] HTTP POST /LoginNRT responded 302 in 16.7963 ms
-2021-02-09 13:57:39.433 +00:00 [INF] HTTP GET / responded 200 in 0.7714 ms
-2021-02-09 13:57:42.000 +00:00 [INF] HTTP GET /LoginNRT responded 200 in 2.0956 ms
-2021-02-09 13:57:49.372 +00:00 [INF] WebApplication1.Pages.LoginModelNRT+InputModel
-2021-02-09 13:57:49.373 +00:00 [INF] HTTP POST /LoginNRT responded 302 in 1.9957 ms
-2021-02-09 13:57:49.379 +00:00 [INF] HTTP GET / responded 200 in 0.9136 ms
-2021-02-09 14:06:37.581 +00:00 [INF] Starting up
-2021-02-09 14:06:37.888 +00:00 [INF] Now listening on: https://localhost:5001
-2021-02-09 14:06:37.896 +00:00 [INF] Now listening on: http://localhost:5000
-2021-02-09 14:06:37.899 +00:00 [INF] Application started. Press Ctrl+C to shut down.
-2021-02-09 14:06:37.901 +00:00 [INF] Hosting environment: Development
-2021-02-09 14:06:37.903 +00:00 [INF] Content root path: C:\dev\test\record-test\WebApplication1
-2021-02-09 14:06:38.274 +00:00 [INF] HTTP GET / responded 200 in 93.8241 ms
-2021-02-09 14:06:40.556 +00:00 [INF] HTTP GET / responded 200 in 2.4371 ms
-2021-02-09 14:06:41.485 +00:00 [INF] HTTP GET /LoginNRT responded 200 in 63.2153 ms
-2021-02-09 14:06:44.645 +00:00 [INF] HTTP GET /LoginNRTB responded 200 in 16.5018 ms
-2021-02-09 14:06:56.059 +00:00 [INF] Success! InputModel { Email = tier1@contoso.com, Password = 56, RememberMe = True }
-2021-02-09 14:06:56.061 +00:00 [INF] HTTP POST /LoginNRTB responded 302 in 18.0374 ms
-2021-02-09 14:06:56.067 +00:00 [INF] HTTP GET / responded 200 in 0.9805 ms
-2021-02-09 14:08:34.171 +00:00 [INF] Starting up
-2021-02-09 14:08:34.443 +00:00 [INF] Now listening on: https://localhost:5001
-2021-02-09 14:08:34.446 +00:00 [INF] Now listening on: http://localhost:5000
-2021-02-09 14:08:34.447 +00:00 [INF] Application started. Press Ctrl+C to shut down.
-2021-02-09 14:08:34.448 +00:00 [INF] Hosting environment: Development
-2021-02-09 14:08:34.449 +00:00 [INF] Content root path: C:\dev\test\record-test\WebApplication1
-2021-02-09 14:08:34.898 +00:00 [INF] HTTP GET / responded 200 in 105.9334 ms
-2021-02-09 14:09:59.176 +00:00 [INF] Starting up
-2021-02-09 14:09:59.495 +00:00 [INF] Now listening on: https://localhost:5001
-2021-02-09 14:09:59.499 +00:00 [INF] Now listening on: http://localhost:5000
-2021-02-09 14:09:59.500 +00:00 [INF] Application started. Press Ctrl+C to shut down.
-2021-02-09 14:09:59.501 +00:00 [INF] Hosting environment: Development
-2021-02-09 14:09:59.502 +00:00 [INF] Content root path: C:\dev\test\record-test\WebApplication1
-2021-02-09 14:09:59.906 +00:00 [INF] HTTP GET / responded 200 in 96.4221 ms
-2021-02-09 14:10:02.072 +00:00 [INF] HTTP GET /LoginNRTB responded 200 in 61.5030 ms
-2021-02-09 14:10:44.147 +00:00 [INF] Starting up
-2021-02-09 14:10:44.477 +00:00 [INF] Now listening on: https://localhost:5001
-2021-02-09 14:10:44.480 +00:00 [INF] Now listening on: http://localhost:5000
-2021-02-09 14:10:44.481 +00:00 [INF] Application started. Press Ctrl+C to shut down.
-2021-02-09 14:10:44.482 +00:00 [INF] Hosting environment: Development
-2021-02-09 14:10:44.483 +00:00 [INF] Content root path: C:\dev\test\record-test\WebApplication1
-2021-02-09 14:10:44.868 +00:00 [INF] HTTP GET / responded 200 in 98.9457 ms
-2021-02-09 14:10:46.702 +00:00 [INF] HTTP GET /LoginNRTB responded 200 in 54.4500 ms
-2021-02-09 14:11:25.995 +00:00 [INF] Starting up
-2021-02-09 14:11:26.280 +00:00 [INF] Now listening on: https://localhost:5001
-2021-02-09 14:11:26.283 +00:00 [INF] Now listening on: http://localhost:5000
-2021-02-09 14:11:26.284 +00:00 [INF] Application started. Press Ctrl+C to shut down.
-2021-02-09 14:11:26.285 +00:00 [INF] Hosting environment: Development
-2021-02-09 14:11:26.285 +00:00 [INF] Content root path: C:\dev\test\record-test\WebApplication1
-2021-02-09 14:11:26.676 +00:00 [INF] HTTP GET / responded 200 in 93.1730 ms
-2021-02-09 14:11:28.259 +00:00 [INF] HTTP GET /LoginNRTB responded 200 in 60.8757 ms
-2021-02-09 14:11:31.080 +00:00 [INF] Success! InputModel { Email = tier1@contoso.com, PasswordB = 234, RememberMe = True }
-2021-02-09 14:11:31.082 +00:00 [INF] HTTP POST /LoginNRTB responded 302 in 18.6671 ms
-2021-02-09 14:11:31.088 +00:00 [INF] HTTP GET / responded 200 in 0.8059 ms
-2021-02-09 14:38:28.572 +00:00 [INF] Starting up
-2021-02-09 14:38:28.862 +00:00 [INF] Now listening on: https://localhost:5001
-2021-02-09 14:38:28.865 +00:00 [INF] Now listening on: http://localhost:5000
-2021-02-09 14:38:28.866 +00:00 [INF] Application started. Press Ctrl+C to shut down.
-2021-02-09 14:38:28.866 +00:00 [INF] Hosting environment: Development
-2021-02-09 14:38:28.867 +00:00 [INF] Content root path: C:\dev\test\record-test\WebApplication1
-2021-02-09 14:38:29.275 +00:00 [INF] HTTP GET / responded 200 in 92.2874 ms
-2021-02-09 14:38:31.270 +00:00 [INF] HTTP GET /LoginNRTB responded 200 in 60.1658 ms
 2021-02-09 14:38:35.926 +00:00 [ERR] HTTP POST /LoginNRTB responded 500 in 14.5838 ms
 System.InvalidOperationException: Record type 'WebApplication1.Pages.LoginModelNRTB+InputModel' has validation metadata defined on property 'PasswordB' that will be ignored. 'PasswordB' is a parameter in the record primary constructor and validation metadata must be associated with the constructor parameter.
    at Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata.ThrowIfRecordTypeHasValidationOnProperties()
@@ -131,14 +51,6 @@ System.InvalidOperationException: Record type 'WebApplication1.Pages.LoginModelN
    at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
    at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
-2021-02-09 14:42:53.520 +00:00 [INF] Starting up
-2021-02-09 14:42:53.801 +00:00 [INF] Now listening on: https://localhost:5001
-2021-02-09 14:42:53.805 +00:00 [INF] Now listening on: http://localhost:5000
-2021-02-09 14:42:53.806 +00:00 [INF] Application started. Press Ctrl+C to shut down.
-2021-02-09 14:42:53.806 +00:00 [INF] Hosting environment: Development
-2021-02-09 14:42:53.807 +00:00 [INF] Content root path: C:\dev\test\record-test\WebApplication1
-2021-02-09 14:42:54.260 +00:00 [INF] HTTP GET / responded 200 in 101.0465 ms
-2021-02-09 14:42:55.568 +00:00 [INF] HTTP GET /LoginNRTB responded 200 in 54.1181 ms
 2021-02-09 14:42:57.396 +00:00 [ERR] HTTP POST /LoginNRTB responded 500 in 14.4523 ms
 System.InvalidOperationException: Record type 'WebApplication1.Pages.LoginModelNRTB+InputModel' has validation metadata defined on property 'PasswordB' that will be ignored. 'PasswordB' is a parameter in the record primary constructor and validation metadata must be associated with the constructor parameter.
    at Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata.ThrowIfRecordTypeHasValidationOnProperties()
@@ -192,47 +104,6 @@ System.InvalidOperationException: Record type 'WebApplication1.Pages.LoginModelN
    at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
    at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
-2021-02-09 14:46:59.959 +00:00 [INF] Starting up
-2021-02-09 14:47:00.253 +00:00 [INF] Now listening on: https://localhost:5001
-2021-02-09 14:47:00.257 +00:00 [INF] Now listening on: http://localhost:5000
-2021-02-09 14:47:00.257 +00:00 [INF] Application started. Press Ctrl+C to shut down.
-2021-02-09 14:47:00.258 +00:00 [INF] Hosting environment: Development
-2021-02-09 14:47:00.259 +00:00 [INF] Content root path: C:\dev\test\record-test\WebApplication1
-2021-02-09 14:47:00.657 +00:00 [INF] HTTP GET / responded 200 in 92.3243 ms
-2021-02-09 14:47:02.300 +00:00 [INF] HTTP GET /LoginNRTB responded 200 in 56.4440 ms
-2021-02-09 14:47:03.365 +00:00 [INF] Success! InputModel { Email = tier1@contoso.com, PasswordB = 1, RememberMe = True }
-2021-02-09 14:47:03.367 +00:00 [INF] HTTP POST /LoginNRTB responded 302 in 17.2490 ms
-2021-02-09 14:47:03.372 +00:00 [INF] HTTP GET / responded 200 in 0.6743 ms
-2021-02-09 14:47:05.909 +00:00 [INF] HTTP GET /LoginNRTB responded 200 in 2.2200 ms
-2021-02-09 14:47:14.145 +00:00 [INF] Success! InputModel { Email = tier1@contoso.com, PasswordB = asdfasdf, RememberMe = True }
-2021-02-09 14:47:14.147 +00:00 [INF] HTTP POST /LoginNRTB responded 302 in 2.7049 ms
-2021-02-09 14:47:14.153 +00:00 [INF] HTTP GET / responded 200 in 0.9196 ms
-2021-02-09 14:47:15.791 +00:00 [INF] HTTP GET /LoginNRTB responded 200 in 1.5106 ms
-2021-02-09 14:47:21.764 +00:00 [INF] Success! InputModel { Email = tier1@contoso.com, PasswordB = asdfsadf, RememberMe = True }
-2021-02-09 14:47:21.765 +00:00 [INF] HTTP POST /LoginNRTB responded 302 in 1.9030 ms
-2021-02-09 14:47:21.771 +00:00 [INF] HTTP GET / responded 200 in 0.4761 ms
-2021-02-09 14:47:23.328 +00:00 [INF] HTTP GET /LoginNRTB responded 200 in 0.9406 ms
-2021-02-09 14:47:39.493 +00:00 [INF] Application is shutting down...
-2021-02-09 14:47:50.352 +00:00 [INF] Starting up
-2021-02-09 14:47:50.643 +00:00 [INF] Now listening on: https://localhost:5001
-2021-02-09 14:47:50.646 +00:00 [INF] Now listening on: http://localhost:5000
-2021-02-09 14:47:50.647 +00:00 [INF] Application started. Press Ctrl+C to shut down.
-2021-02-09 14:47:50.648 +00:00 [INF] Hosting environment: Development
-2021-02-09 14:47:50.648 +00:00 [INF] Content root path: C:\dev\test\record-test\WebApplication1
-2021-02-09 14:47:51.062 +00:00 [INF] HTTP GET / responded 200 in 91.3630 ms
-2021-02-09 14:47:52.512 +00:00 [INF] HTTP GET /LoginNRTB responded 200 in 83.6617 ms
-2021-02-09 14:47:55.198 +00:00 [INF] Success! InputModel { Email = tier1@contoso.com, PasswordB = asdfsadf, RememberMe = True }
-2021-02-09 14:47:55.200 +00:00 [INF] HTTP POST /LoginNRTB responded 302 in 24.2891 ms
-2021-02-09 14:47:55.208 +00:00 [INF] HTTP GET / responded 200 in 0.9527 ms
-2021-02-09 14:47:58.383 +00:00 [INF] Application is shutting down...
-2021-02-09 14:48:33.610 +00:00 [INF] Starting up
-2021-02-09 14:48:33.899 +00:00 [INF] Now listening on: https://localhost:5001
-2021-02-09 14:48:33.902 +00:00 [INF] Now listening on: http://localhost:5000
-2021-02-09 14:48:33.903 +00:00 [INF] Application started. Press Ctrl+C to shut down.
-2021-02-09 14:48:33.903 +00:00 [INF] Hosting environment: Development
-2021-02-09 14:48:33.904 +00:00 [INF] Content root path: C:\dev\test\record-test\WebApplication1
-2021-02-09 14:48:34.313 +00:00 [INF] HTTP GET / responded 200 in 92.6945 ms
-2021-02-09 14:48:35.887 +00:00 [INF] HTTP GET /LoginNRTB responded 200 in 62.0998 ms
 2021-02-09 14:48:39.342 +00:00 [ERR] HTTP POST /LoginNRTB responded 500 in 13.8303 ms
 System.InvalidOperationException: Record type 'WebApplication1.Pages.LoginModelNRTB+InputModel' has validation metadata defined on property 'PasswordB' that will be ignored. 'PasswordB' is a parameter in the record primary constructor and validation metadata must be associated with the constructor parameter.
    at Microsoft.AspNetCore.Mvc.ModelBinding.ModelMetadata.ThrowIfRecordTypeHasValidationOnProperties()
@@ -286,4 +157,3 @@ System.InvalidOperationException: Record type 'WebApplication1.Pages.LoginModelN
    at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
    at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
-2021-02-09 14:58:47.130 +00:00 [INF] Application is shutting down...
